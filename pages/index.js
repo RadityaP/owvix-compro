@@ -54,45 +54,45 @@ const Index = () => {
       </Section>
       <Section text="white">
         <Title text="MOMENT DOCUMENTARIES" size="text-[32px] md:text-[48px] " isCentered></Title>
-        <div className={`${galleryStyles.conta} gallery-home`}>
-          <div className={`${galleryStyles.contsa} md:!pl-0`}>
-            <div className={galleryStyles.container}>
+        <div className={`${galleryStyles.container} gallery-home`}>
+          <div className={`${galleryStyles["item-container"]} md:!pl-0`}>
+            <div className={galleryStyles["gallery-container"]}>
               <GalleryComponent photos={eventPhotos} />
             </div>
             <h3 className={galleryStyles.title}>Events</h3>
           </div>
-          <div className={`${galleryStyles.contsa} md:!pr-0`}>
-            <div className={galleryStyles.container}>
+          <div className={`${galleryStyles["item-container"]} md:!pr-0`}>
+            <div className={galleryStyles["gallery-container"]}>
               <GalleryComponent photos={graduationPhotos} />
             </div>
             <h3 className={galleryStyles.title}>Graduation</h3>
           </div>
-          <div className={`${galleryStyles.contsa} md:!pl-0`}>
-            <div className={galleryStyles.container}>
+          <div className={`${galleryStyles["item-container"]} md:!pl-0`}>
+            <div className={galleryStyles["gallery-container"]}>
               <GalleryComponent photos={birthdayPhotos} />
             </div>
             <h3 className={galleryStyles.title}>Birthday</h3>
           </div>
-          <div className={`${galleryStyles.contsa} md:!pr-0`}>
-            <div className={galleryStyles.container}>
+          <div className={`${galleryStyles["item-container"]} md:!pr-0`}>
+            <div className={galleryStyles["gallery-container"]}>
               <GalleryComponent photos={engagementPhotos} />
             </div>
             <h3 className={galleryStyles.title}>Engagement</h3>
           </div>
-          <div className={`${galleryStyles.contsa} md:!pl-0`}>
-            <div className={galleryStyles.container}>
+          <div className={`${galleryStyles["item-container"]} md:!pl-0`}>
+            <div className={galleryStyles["gallery-container"]}>
               <GalleryComponent photos={preweddingPhotos} />
             </div>
             <h3 className={galleryStyles.title}>Prewedding</h3>
           </div>
-          <div className={`${galleryStyles.contsa} md:!pr-0`}>
-            <div className={galleryStyles.container}>
+          <div className={`${galleryStyles["item-container"]} md:!pr-0`}>
+            <div className={galleryStyles["gallery-container"]}>
               <GalleryComponent photos={siramanPhotos} />
             </div>
             <h3 className={galleryStyles.title}>Siraman</h3>
           </div>
-          <div className={`${galleryStyles.contsa} md:!pl-0`}>
-            <div className={galleryStyles.container}>
+          <div className={`${galleryStyles["item-container"]} md:!pl-0`}>
+            <div className={galleryStyles["gallery-container"]}>
               <GalleryComponent photos={weddingPhotos} />
             </div>
             <h3 className={galleryStyles.title}>Wedding</h3>

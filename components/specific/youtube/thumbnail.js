@@ -22,7 +22,6 @@ const Thumbnail = (props) => {
           objectFit="contain"
           loading="lazy"
           placeholder="blur"
-          blurDataURL="data:image/png;base64"
         ></Image>
         <div className="absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%]">
           <Image

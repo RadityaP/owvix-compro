@@ -1,3 +1,5 @@
+import IPB_Amel from "../public/assets/documentation/graduation/IPB_Amel_2.jpg";
+
 export const eventPhotos = [
   {
     src: require("/public/assets/documentation/event/D3_perhotelan_goes_to_bali.jpg"),
@@ -124,13 +126,13 @@ export const eventPhotos = [
 
 export const graduationPhotos = [
   {
-    src: require("/public/assets/documentation/graduation/IPB_Amel.jpg"),
+    src: "https://lh5.googleusercontent.com/d/1XbWyPE31_y8bUu2YyrpFktvQk-wzgH5C",
     width: 2,
     height: 3,
     title: "IPB - Amel",
   },
   {
-    src: require("/public/assets/documentation/graduation/IPB_Amel_2.jpg"),
+    src: IPB_Amel,
     width: 3,
     height: 2,
     title: "IPB - Amel",

@@ -30,6 +30,7 @@ const Index = () => {
         direction={"column"}
         photo={photo}
         left={left}
+        quality={50}
         onClick={(i) => openLightbox(i)}
         top={top}
       />

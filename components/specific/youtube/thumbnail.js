@@ -15,14 +15,7 @@ const Thumbnail = (props) => {
           setPlayedVideo(videoId);
         }}
       >
-        <Image
-          src={src}
-          alt={title}
-          layout="fill"
-          objectFit="contain"
-          loading="lazy"
-          placeholder="blur"
-        ></Image>
+        <Image src={src} alt={title} layout="fill" objectFit="contain" loading="lazy"></Image>
         <div className="absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%]">
           <Image
             src={require("../../../public/assets/play-button-colored.png")}

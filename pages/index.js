@@ -18,8 +18,10 @@ import {
   siramanPhotos,
   weddingPhotos,
 } from "../file/images";
+import Map from "../components/specific/map";
 
-const GalleryComponent = dynamic(() => import("../components/specific/gallery"), {});
+// const GalleryComponent = dynamic(() => import("../components/specific/gallery"), {});
+import GalleryComponent from "../components/specific/gallery/gallery";
 const YoutubeComponent = dynamic(() => import("../components/specific/youtube"), {});
 
 const Index = () => {
@@ -154,6 +156,7 @@ const Index = () => {
                   layout="fill"
                   loading="lazy"
                   objectFit="contain"
+                  // placeholder="blur"
                   alt="partner1"
                 ></Image>
               </div>
@@ -163,6 +166,7 @@ const Index = () => {
                   layout="fill"
                   loading="lazy"
                   objectFit="contain"
+                  // placeholder="blur"
                   alt="partner1"
                 ></Image>
               </div>
@@ -172,6 +176,7 @@ const Index = () => {
                   layout="fill"
                   loading="lazy"
                   objectFit="contain"
+                  // placeholder="blur"
                   alt="partner1"
                 ></Image>
               </div>
@@ -181,6 +186,7 @@ const Index = () => {
                   layout="fill"
                   loading="lazy"
                   objectFit="contain"
+                  // placeholder="blur"
                   alt="partner1"
                 ></Image>
               </div>
@@ -199,7 +205,6 @@ const Index = () => {
           </div>
         </Section>
       </div>
-      {/* <div className={`bg-white w-full py-[20px]`}> */}
       <Section text="white">
         <div className="flex md:flex-row flex-col gap-[30px] my-5 md:my-12 items-center md:items-start">
           <div className="basis-6/12 text-center md:text-right mb-4 md:mb-0">
@@ -223,6 +228,7 @@ const Index = () => {
                       layout="fill"
                       loading="lazy"
                       objectFit="contain"
+                      // placeholder="blur"
                       alt="partner1"
                     ></Image>
                   </div>
@@ -239,6 +245,7 @@ const Index = () => {
                       layout="fill"
                       loading="lazy"
                       objectFit="contain"
+                      // placeholder="blur"
                       alt="partner1"
                     ></Image>
                   </div>
@@ -253,6 +260,7 @@ const Index = () => {
                   layout="fill"
                   loading="lazy"
                   objectFit="contain"
+                  // placeholder="blur"
                   alt="partner1"
                 ></Image>
               </div>
@@ -267,6 +275,7 @@ const Index = () => {
                       layout="fill"
                       loading="lazy"
                       objectFit="contain"
+                      // placeholder="blur"
                       alt="partner1"
                     ></Image>
                   </div>
@@ -285,6 +294,7 @@ const Index = () => {
                       layout="fill"
                       loading="lazy"
                       objectFit="contain"
+                      // placeholder="blur"
                       alt="partner1"
                     ></Image>
                   </div>
@@ -297,7 +307,10 @@ const Index = () => {
           </div>
         </div>
       </Section>
-      {/* </div> */}
+      <Section text="white">
+        <Title text="OUR OFFICE" size="text-[32px] md:text-[48px] " isCentered></Title>
+        <Map />
+      </Section>
     </Container>
   );
 };

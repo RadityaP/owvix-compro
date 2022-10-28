@@ -29,6 +29,7 @@ const CustomRenderer = ({ index, photo, margin, direction, top, left, onClick, q
         loading="lazy"
         placeholder="blur"
         quality={quality ?? 1}
+        blurDataURL="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
       ></Image>
     </div>
   );

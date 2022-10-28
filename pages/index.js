@@ -4,7 +4,7 @@ import dynamic from "next/dynamic";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Title from "../components/global/title";
-import styles from "../styles/home.module.css";
+import styles from "../styles/main.module.css";
 import galleryStyles from "../styles/galeri.module.css";
 import Button from "../components/global/button";
 import Image from "next/image";

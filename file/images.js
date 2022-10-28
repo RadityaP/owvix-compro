@@ -99,7 +99,7 @@ export const eventPhotos = [
     title: "Pembukaan Innovation Center ITDRI",
   },
   {
-    src: require("/public/assets/documentation/event/PLN_ DATA_professional_MC_training.jpg"),
+    src: require("/public/assets/documentation/event/PLN_data_professional_MC_training.jpg"),
     width: 3,
     height: 2,
     title: "PLN x DATA Professional MC Training",

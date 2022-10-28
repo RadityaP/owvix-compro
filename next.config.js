@@ -4,8 +4,8 @@ const withImages = require("next-images");
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-
   images: {
+    minimumCacheTTL: 31536000,
     disableStaticImages: true,
     remotePatterns: [
       {

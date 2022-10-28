@@ -20,8 +20,9 @@ import {
 } from "../file/images";
 import Map from "../components/specific/map";
 
-// const GalleryComponent = dynamic(() => import("../components/specific/gallery"), {});
-import GalleryComponent from "../components/specific/gallery/gallery";
+const GalleryComponent = dynamic(() => import("../components/specific/gallery"), {
+  ssr: false,
+});
 const YoutubeComponent = dynamic(() => import("../components/specific/youtube"), {});
 
 const Index = () => {

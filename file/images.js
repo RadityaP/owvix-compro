@@ -1,4 +1,5 @@
-import IPB_Amel from "../public/assets/documentation/graduation/IPB_Amel_2.jpg";
+import IPB_Amel from "../public/assets/documentation/graduation/IPB_Amel.jpg";
+import IPB_Amel2 from "../public/assets/documentation/graduation/IPB_Amel_2.jpg";
 
 export const eventPhotos = [
   {
@@ -126,13 +127,13 @@ export const eventPhotos = [
 
 export const graduationPhotos = [
   {
-    src: "https://lh5.googleusercontent.com/d/1XbWyPE31_y8bUu2YyrpFktvQk-wzgH5C",
+    src: IPB_Amel,
     width: 2,
     height: 3,
     title: "IPB - Amel",
   },
   {
-    src: IPB_Amel,
+    src: IPB_Amel2,
     width: 3,
     height: 2,
     title: "IPB - Amel",

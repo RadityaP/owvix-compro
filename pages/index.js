@@ -52,7 +52,7 @@ const Index = () => {
           isCentered
         ></Title>
         <div className="flex justify-center relative">
-          <YoutubeComponent videos={creativeVideos} />
+          <YoutubeComponent videos={creativeVideos} showTitle={false} />
         </div>
       </Section>
       <Section text="white">
@@ -102,7 +102,7 @@ const Index = () => {
           </div>
         </div>
         <div className="flex justify-center relative mt-10">
-          <YoutubeComponent videos={momentVideos} />
+          <YoutubeComponent videos={momentVideos} showTitle={true} />
         </div>
       </Section>
       <div

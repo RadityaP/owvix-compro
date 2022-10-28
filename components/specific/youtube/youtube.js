@@ -3,7 +3,7 @@ import Image from "next/image";
 import Thumbnail from "./thumbnail";
 import styles from "../../../styles/galeri.module.css";
 
-const Youtube = ({ videos }) => {
+const Youtube = ({ videos, showTitle }) => {
   const [index, setIndex] = useState(0);
   const [playedVideo, setPlayedVideo] = useState("");
   return (
@@ -43,7 +43,9 @@ const Youtube = ({ videos }) => {
             );
           })}
         </div>
-        <h3 className="w-full text-[28px] mt-5 text-center">Video Documentaries</h3>
+        {showTitle ? (
+          <h3 className="w-full text-[28px] mt-5 text-center">Video Documentaries</h3>
+        ) : null}
       </div>
       <div
         style={{ opacity: index === videos.length - 1 ? 0 : 1 }}

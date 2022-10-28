@@ -1,5 +1,5 @@
 import Container from "../components/global/container";
-import styles from "../styles/home.module.css";
+import styles from "../styles/main.module.css";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 import Section from "../components/global/section";

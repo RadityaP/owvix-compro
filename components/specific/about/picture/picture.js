@@ -35,6 +35,7 @@ const Index = ({ image, isRight, name, title }) => {
           alt="logo"
           loading="lazy"
           placeholder="blur"
+          blurDataURL="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
         ></Image>
       </div>
       <Name name={name} title={title} />
@@ -61,6 +62,7 @@ const Index = ({ image, isRight, name, title }) => {
           alt="logo"
           loading="lazy"
           placeholder="blur"
+          blurDataURL="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
         ></Image>
       </div>
       <Name name={name} title={title} />

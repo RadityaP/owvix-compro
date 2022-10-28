@@ -246,7 +246,7 @@ export const graduationPhotos = [
     title: "UPI - Idvan",
   },
   {
-    src: require("/public/assets/documentation/graduation/UPI_Idvan_2.jpg"),
+    src: require("/public/assets/documentation/graduation/Upi_Idvan_2.jpg"),
     width: 2,
     height: 3,
     title: "UPI - Idvan",

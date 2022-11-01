@@ -5,7 +5,7 @@ const Button = (props) => {
   return (
     <span
       onClick={() => onClick()}
-      className={`${className} border-3 border-solid border-${color}  ${
+      className={`${className} border-3 border-solid border-${color} ${
         isWide ? "px-20 py-[4px]" : "px-7 py-2"
       } rounded-3xl ${
         size === "large" ? "text-[18px]" : "text-[16px]"

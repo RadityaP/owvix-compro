@@ -41,38 +41,42 @@ const Index = () => {
 
   return (
     <Container title="Clients | Creative Agency | Owvix Creative">
-      <Section text="grey-primary">
-        <Title
-          text="OUR HAPPY CLIENT"
-          size="text-[32px] md:text-[48px]"
-          isCentered
-          className="mt-0"
-        ></Title>
-        <div className="px-10 md:px-40">
-          <Gallery
-            photos={photos}
-            direction={"column"}
-            columns={3}
-            onClick={openLightbox}
-            renderImage={imageRenderer}
-          />
-          <ModalGateway>
-            {viewerIsOpen ? (
-              <Modal onClose={closeLightbox}>
-                <Carousel
-                  currentIndex={currentImage}
-                  views={photos.map((x) => ({
-                    ...x,
-                    alt: x.title,
-                    srcset: x.srcSet,
-                    caption: <div style={{ fontSize: "40px", textAlign: "center" }}>{x.title}</div>,
-                  }))}
-                />
-              </Modal>
-            ) : null}
-          </ModalGateway>
-        </div>
-      </Section>
+      <div className="bg-white w-full">
+        <Section text="grey-primary">
+          <Title
+            text="OUR HAPPY CLIENT"
+            size="text-[32px] md:text-[48px]"
+            isCentered
+            className="mt-0"
+          ></Title>
+          <div className="md:px-40">
+            <Gallery
+              photos={photos}
+              direction={"column"}
+              columns={3}
+              onClick={openLightbox}
+              renderImage={imageRenderer}
+            />
+            <ModalGateway>
+              {viewerIsOpen ? (
+                <Modal onClose={closeLightbox}>
+                  <Carousel
+                    currentIndex={currentImage}
+                    views={photos.map((x) => ({
+                      ...x,
+                      alt: x.title,
+                      srcset: x.srcSet,
+                      caption: (
+                        <div style={{ fontSize: "40px", textAlign: "center" }}>{x.title}</div>
+                      ),
+                    }))}
+                  />
+                </Modal>
+              ) : null}
+            </ModalGateway>
+          </div>
+        </Section>
+      </div>
     </Container>
   );
 };

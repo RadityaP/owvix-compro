@@ -27,10 +27,10 @@ const Navbar = () => {
   const router = useRouter();
 
   return (
-    <nav className="bg-black border-b-2 border-b-gray-400 border-solid">
+    <nav className="bg-black border-b-2 border-b-gray-400 border-0 border-solid">
       <div className="container px-7 md:px-10 max-w-[1280px] flex flex-wrap justify-between items-center mx-auto">
         <Link href={"/"} className="flex items-center text-white text-3xl">
-          <div className="w-[100px] h-[100px] relative cursor-pointer">
+          <div className="w-[70px] h-[70px] md:w-[100px] md:h-[100px] relative cursor-pointer">
             <Image
               src={require("../../../public/assets/logo-white.png")}
               alt="logo"
@@ -44,9 +44,9 @@ const Navbar = () => {
           className="relative w-[24px] h-[24px] cursor-pointer flex md:hidden flex-col gap-[5px]"
           onClick={() => setMenuOpened(!menuOpened)}
         >
-          <div className="w-full h-[4px] bg-white rounded-full"></div>
-          <div className="w-full h-[4px] bg-white rounded-full"></div>
-          <div className="w-full h-[4px] bg-white rounded-full"></div>
+          <div className="w-full h-[3px] md:h-[4px] bg-white rounded-full"></div>
+          <div className="w-full h-[3px] md:h-[4px] bg-white rounded-full"></div>
+          <div className="w-full h-[3px] md:h-[4px] bg-white rounded-full"></div>
         </div>
         <div
           className={`${menuOpened ? "block" : "hidden"} w-full md:block md:w-auto`}
@@ -55,7 +55,7 @@ const Navbar = () => {
           <ul className="flex flex-col p-4 mt-4 mb-0 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
             {NavigationList.map((list) => {
               return (
-                <li key={list.id}>
+                <li key={list.id} className="list-none">
                   <Link href={list.link}>
                     <a
                       className={`${

@@ -48,15 +48,15 @@ const Index = () => {
       <Section text="white">
         <Title
           text="CREATIVE VIDEO PRODUCTION"
-          size="text-[32px] md:text-[48px] "
+          size="text-[28px] md:text-[48px]"
           isCentered
         ></Title>
         <div className="flex justify-center relative">
-          <YoutubeComponent videos={creativeVideos} showTitle={false} />
+          <YoutubeComponent videos={creativeVideos} />
         </div>
       </Section>
       <Section text="white">
-        <Title text="MOMENT DOCUMENTARIES" size="text-[32px] md:text-[48px] " isCentered></Title>
+        <Title text="MOMENT DOCUMENTARIES" size="text-[28px] md:text-[48px] " isCentered></Title>
         <div className={`${galleryStyles.container} gallery-home`}>
           <div className={`${galleryStyles["item-container"]} md:!pl-0`}>
             <div className={galleryStyles["gallery-container"]}>
@@ -102,8 +102,9 @@ const Index = () => {
           </div>
         </div>
         <div className="flex justify-center relative mt-10">
-          <YoutubeComponent videos={momentVideos} showTitle={true} />
+          <YoutubeComponent videos={momentVideos} />
         </div>
+        <h3 className="w-full text-[20px] md:text-[28px] mt-5 text-center">Video Documentaries</h3>
       </Section>
       <div
         className={`${styles["background-2"]} w-full pt-[100px] pb-[150px] relative after:content-[''] after:absolute after:left-0 after:top-0 after:bottom-0 after:right-0 after:z-2`}
@@ -111,21 +112,19 @@ const Index = () => {
         <Section text="white">
           <div className="mb-10 z-10 relative">
             <h1 className="text-[40px] md:text-[88px] font-bold m-0">We are </h1>
-            <h1 className="text-[40px] md:text-[88px] font-bold m-0 mt-[-10px] md:mt-[-30px]">
+            <h1 className="text-[40px] md:text-[88px] font-bold m-0 md:mt-[-30px]">
               Owvix Creative.
             </h1>
-            <h1 className="text-[40px] md:text-[88px] font-bold m-0 mt-[-10px] md:mt-[-30px]">
+            <h1 className="text-[40px] md:text-[88px] font-bold m-0 md:mt-[-30px]">
               A creative agency
             </h1>
-            <h1 className="text-[40px] md:text-[88px] font-bold m-0 mt-[-10px] md:mt-[-30px]">
+            <h1 className="text-[40px] md:text-[88px] font-bold m-0 md:mt-[-30px]">
               that puts moment
             </h1>
-            <h1 className="text-[40px] md:text-[88px] font-bold m-0 mt-[-10px] md:mt-[-30px]">
+            <h1 className="text-[40px] md:text-[88px] font-bold m-0 md:mt-[-30px]">
               into something
             </h1>
-            <h1 className="text-[40px] md:text-[88px] font-bold m-0 mt-[-10px] md:mt-[-30px]">
-              magical.
-            </h1>
+            <h1 className="text-[40px] md:text-[88px] font-bold m-0 md:mt-[-30px]">magical.</h1>
           </div>
 
           <Button
@@ -150,8 +149,8 @@ const Index = () => {
               CLIENTS
               <br />
             </div>
-            <div className="flex ml-0 md:ml-12 md:border-black border-0 md:border-l-4 border-solid">
-              <div className="w-[90px] h-[100px] md:w-[120px] md:h-[120px] lg:w-[200px] md:w-[120px] md:h-[120px] lg:h-[120px] relative">
+            <div className="flex flex-col items-center md:flex-row ml-0 md:ml-12 md:border-black border-0 md:border-l-4 border-solid">
+              <div className="w-[300px] h-[150px] md:w-[120px] md:h-[120px] lg:w-[200px] md:w-[120px] md:h-[120px] lg:h-[120px] relative">
                 <Image
                   src={require("../public/assets/partner/itdri.png")}
                   layout="fill"
@@ -161,7 +160,7 @@ const Index = () => {
                   alt="partner1"
                 ></Image>
               </div>
-              <div className="w-[90px] h-[100px] md:w-[120px] md:h-[120px] lg:w-[100px] md:w-[120px] md:h-[120px] lg:h-[120px] relative">
+              <div className="w-[150px] h-[150px] md:w-[120px] md:h-[120px] lg:w-[100px] md:w-[120px] md:h-[120px] lg:h-[120px] relative">
                 <Image
                   src={require("../public/assets/partner/inspektorat-jawa-barat.png")}
                   layout="fill"
@@ -171,7 +170,7 @@ const Index = () => {
                   alt="partner1"
                 ></Image>
               </div>
-              <div className="w-[90px] h-[100px] md:w-[120px] md:h-[120px] lg:w-[200px] md:w-[120px] md:h-[120px] lg:h-[120px] relative">
+              <div className="w-[200px] h-[200px] md:w-[120px] md:h-[120px] lg:w-[200px] md:w-[120px] md:h-[120px] lg:h-[120px] relative">
                 <Image
                   src={require("../public/assets/partner/direktorat-jenderal-kekayaan-negara-kemenkeu.png")}
                   layout="fill"
@@ -181,7 +180,7 @@ const Index = () => {
                   alt="partner1"
                 ></Image>
               </div>
-              <div className="w-[90px] h-[100px] md:w-[120px] md:h-[120px] lg:w-[200px] md:w-[120px] md:h-[120px] lg:h-[120px] relative">
+              <div className="w-[200px] h-[100px] md:w-[120px] md:h-[120px] lg:w-[200px] md:w-[120px] md:h-[120px] lg:h-[120px] relative">
                 <Image
                   src={require("../public/assets/partner/schlumberger.png")}
                   layout="fill"
@@ -198,6 +197,7 @@ const Index = () => {
               color="grey-primary"
               size="small"
               isWide
+              className="text-grey-primary border-grey-primary"
               hoverColor="red-secondary"
               onClick={() => router.push("/clients")}
             >
@@ -209,13 +209,13 @@ const Index = () => {
       <Section text="white">
         <div className="flex md:flex-row flex-col gap-[30px] my-5 md:my-12 items-center md:items-start">
           <div className="basis-6/12 text-center md:text-right mb-4 md:mb-0">
-            <h1 className="text-[32px] md:text-[56px] font-bold m-0 mt-[-10px] md:mt-[-20px]">
+            <h1 className="text-[28px] md:text-[56px] font-bold m-0 mt-[-10px] md:mt-[-20px]">
               CONNECT
             </h1>
-            <h1 className="text-[32px] md:text-[56px] font-bold m-0 mt-[-10px] md:mt-[-20px]">
+            <h1 className="text-[28px] md:text-[56px] font-bold m-0 mt-[-10px] md:mt-[-20px]">
               WITH
             </h1>
-            <h1 className="text-[32px] md:text-[56px] font-bold m-0 mt-[-10px] md:mt-[-20px]">
+            <h1 className="text-[28px] md:text-[56px] font-bold m-0 mt-[-10px] md:mt-[-20px]">
               US
             </h1>
           </div>
@@ -309,7 +309,7 @@ const Index = () => {
         </div>
       </Section>
       <Section text="white">
-        <Title text="OUR OFFICE" size="text-[32px] md:text-[48px] " isCentered></Title>
+        <Title text="OUR OFFICE" size="text-[28px] md:text-[48px] " isCentered></Title>
         <Map />
       </Section>
     </Container>

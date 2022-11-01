@@ -22,7 +22,7 @@ const Index = () => {
       </div>
       <Section text="white">
         <div className="flex flex-col md:flex-row items-stretch">
-          <div className="basis-6/12 h-fit py-3 md:py-5 text-justify flex justify-center md:justify-start items-center h-auto">
+          <div className="basis-6/12 h-fit py-0 md:py-5 text-justify flex justify-center md:justify-start items-center h-auto">
             <div className="md:w-[500px] md:h-[500px] w-[200px] h-[200px] relative">
               <Image
                 src={require("../public/assets/logo-white-no-text.png")}
@@ -36,7 +36,7 @@ const Index = () => {
             </div>
           </div>
           <div className="basis-6/12 flex items-center px-2 md:px-0">
-            <h6 className="text-lg md:text-2xl font-normal h-fit md:pl-16 md:py-5 text-center md:text-justify md:border-l-white md:border-0 md:border-l-2 md:border-solid">
+            <h6 className="text-sm md:text-lg md:text-2xl font-normal h-fit md:pl-16 md:py-5 text-center md:text-justify md:border-l-white md:border-0 md:border-l-2 md:border-solid">
               Owvix was founded by Muhammad Rinaldy Syarifullah, the goal is to create a flexible
               and reliable creative team to cover a lot of documentation needs for graduations,
               wedding, and product advertisement in the scope of Bandung and especially in West Java
@@ -52,7 +52,7 @@ const Index = () => {
       <Section text="white">
         <div className="flex flex-col md:flex-row items-stretch px-2 md:px-0">
           <div className="basis-6/12 flex items-center">
-            <h6 className=" text-lg md:text-2xl font-normal h-fit mb-10 md:mb-0 md:pr-16 text-center md:text-justify m-0">
+            <h6 className="text-sm md:text-lg md:text-2xl font-normal h-fit mb-10 md:mb-0 md:pr-16 text-center md:text-justify m-0">
               &quot;On March 23 2018, Owvix Photography was formed with limited resources, but was
               able to produce a great output that could compete in the creative agency industry in
               West Java&quot; - M. Rinaldy S.
@@ -62,7 +62,7 @@ const Index = () => {
             </h6>
           </div>
           <div className="basis-6/12 flex items-center">
-            <h6 className="text-lg md:text-2xl font-normal h-fit md:pl-16 text-center md:text-justify m-0">
+            <h6 className="text-sm md:text-lg md:text-2xl font-normal h-fit md:pl-16 text-center md:text-justify m-0">
               Within a few years, Owvix not only provided a great services for documentation of
               graduations, weddings or products, but also began to dive deeper by making indie short
               films, also able to create web-series, making motion graphic animations for various

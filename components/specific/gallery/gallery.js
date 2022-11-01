@@ -1,7 +1,6 @@
-import React, { useEffect, useState, useCallback } from "react";
+import React, { useState, useCallback } from "react";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
-// import { photos } from "../../../file/images";
 import Image from "next/image";
 import styles from "../../../styles/galeri.module.css";
 import CustomRenderer from "./customImageRenderer";

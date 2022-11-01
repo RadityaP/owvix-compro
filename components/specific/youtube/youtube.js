@@ -43,9 +43,6 @@ const Youtube = ({ videos, showTitle }) => {
             );
           })}
         </div>
-        {showTitle ? (
-          <h3 className="w-full text-[28px] mt-5 text-center">Video Documentaries</h3>
-        ) : null}
       </div>
       <div
         style={{ opacity: index === videos.length - 1 ? 0 : 1 }}

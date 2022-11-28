@@ -47,9 +47,10 @@
 
 .title {
   width: 100%;
-  font-size: 28px;
+  font-size: 24px;
   text-align: center;
-  margin: 8px 0;
+  margin: 16px 0;
+  font-weight: 500;
 }
 
 .section-title {
@@ -81,7 +82,7 @@
   }
 
   .title {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -100,7 +101,7 @@
   }
 
   .title {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -119,7 +120,7 @@
   }
 
   .title {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .container-animation-2 {

@@ -1,14 +1,14 @@
-import Container from "../components/global/container";
-import Section from "../components/global/section";
-import dynamic from "next/dynamic";
-import Link from "next/link";
-import { useRouter } from "next/router";
-import Title from "../components/global/title";
-import styles from "../styles/main.module.css";
-import galleryStyles from "../styles/galeri.module.css";
-import Button from "../components/global/button";
-import Image from "next/image";
-import { creativeVideos, momentVideos } from "../file/videos";
+import Container from '../components/global/container';
+import Section from '../components/global/section';
+import dynamic from 'next/dynamic';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import Title from '../components/global/title';
+import styles from '../styles/main.module.css';
+import galleryStyles from '../styles/galeri.module.css';
+import Button from '../components/global/button';
+import Image from 'next/image';
+import { creativeVideos, momentVideos } from '../file/videos';
 import {
   eventPhotos,
   graduationPhotos,
@@ -17,20 +17,20 @@ import {
   preweddingPhotos,
   siramanPhotos,
   weddingPhotos,
-} from "../file/images";
-import Map from "../components/specific/map";
+} from '../file/images';
+import Map from '../components/specific/map';
 
-const GalleryComponent = dynamic(() => import("../components/specific/gallery"), {
+const GalleryComponent = dynamic(() => import('../components/specific/gallery'), {
   ssr: false,
 });
-const YoutubeComponent = dynamic(() => import("../components/specific/youtube"), {});
+const YoutubeComponent = dynamic(() => import('../components/specific/youtube'), {});
 
 const Index = () => {
   const router = useRouter();
 
   return (
     <Container title="Creative Agency | Owvix Creative" background="black">
-      <div className={`${styles["background"]} w-full pt-[100px] pb-[150px]`}>
+      <div className={`${styles['background']} w-full pt-[100px] pb-[150px]`}>
         <Section text="white">
           <div className="mb-10">
             <h1 className="text-[50px] md:text-[88px] font-bold m-0">INFINITY</h1>
@@ -39,10 +39,20 @@ const Index = () => {
             </h1>
           </div>
           <div className="">
-            VIDEO PRODUCTION | FILM | WEB SERIES | VIDEO PROMOTION | COMPANY PROFILE | ANIMATION
+            <span className="mr-2">Video Production</span> | <span className="mx-2">Film</span> |
+            <span className="mx-2">Web Series</span> | <span className="mx-2">Video Promotion</span>{' '}
+            | <span className="mx-2">Company Profile </span>|{' '}
+            <span className="ml-2">Animation</span>
           </div>
-          <div className="">MOMENT DOCUMENTARIES | EVENT | WEDDING | PREWEDDING | GRADUATION</div>
-          <div className="">ADVERTISING | PRODUCT | YEAR BOOK | ALBUM</div>
+          <div className="">
+            <span className="mr-2">Moment Documentaries</span> | <span className="mx-2">Event</span>{' '}
+            | <span className="mx-2">Wedding</span> | <span className="mx-2">Prewedding</span> |{' '}
+            <span className="ml-2">Graduation</span>
+          </div>
+          <div className="">
+            <span className="mr-2">Advertising</span> | <span className="mx-2">Product</span> |{' '}
+            <span className="mx-2">Year Book</span> | <span className="ml-2">Album</span>
+          </div>
         </Section>
       </div>
       <Section text="white">
@@ -58,44 +68,44 @@ const Index = () => {
       <Section text="white">
         <Title text="MOMENT DOCUMENTARIES" size="text-[28px] md:text-[48px] " isCentered></Title>
         <div className={`${galleryStyles.container} gallery-home`}>
-          <div className={`${galleryStyles["item-container"]} md:!pl-0`}>
-            <div className={galleryStyles["gallery-container"]}>
+          <div className={`${galleryStyles['item-container']} md:!pl-0`}>
+            <div className={galleryStyles['gallery-container']}>
               <GalleryComponent photos={eventPhotos} />
             </div>
             <h3 className={galleryStyles.title}>Events</h3>
           </div>
-          <div className={`${galleryStyles["item-container"]} md:!pr-0`}>
-            <div className={galleryStyles["gallery-container"]}>
+          <div className={`${galleryStyles['item-container']} md:!pr-0`}>
+            <div className={galleryStyles['gallery-container']}>
               <GalleryComponent photos={graduationPhotos} />
             </div>
             <h3 className={galleryStyles.title}>Graduation</h3>
           </div>
-          <div className={`${galleryStyles["item-container"]} md:!pl-0`}>
-            <div className={galleryStyles["gallery-container"]}>
+          <div className={`${galleryStyles['item-container']} md:!pl-0`}>
+            <div className={galleryStyles['gallery-container']}>
               <GalleryComponent photos={birthdayPhotos} />
             </div>
             <h3 className={galleryStyles.title}>Birthday</h3>
           </div>
-          <div className={`${galleryStyles["item-container"]} md:!pr-0`}>
-            <div className={galleryStyles["gallery-container"]}>
+          <div className={`${galleryStyles['item-container']} md:!pr-0`}>
+            <div className={galleryStyles['gallery-container']}>
               <GalleryComponent photos={engagementPhotos} />
             </div>
             <h3 className={galleryStyles.title}>Engagement</h3>
           </div>
-          <div className={`${galleryStyles["item-container"]} md:!pl-0`}>
-            <div className={galleryStyles["gallery-container"]}>
+          <div className={`${galleryStyles['item-container']} md:!pl-0`}>
+            <div className={galleryStyles['gallery-container']}>
               <GalleryComponent photos={preweddingPhotos} />
             </div>
             <h3 className={galleryStyles.title}>Prewedding</h3>
           </div>
-          <div className={`${galleryStyles["item-container"]} md:!pr-0`}>
-            <div className={galleryStyles["gallery-container"]}>
+          <div className={`${galleryStyles['item-container']} md:!pr-0`}>
+            <div className={galleryStyles['gallery-container']}>
               <GalleryComponent photos={siramanPhotos} />
             </div>
             <h3 className={galleryStyles.title}>Siraman</h3>
           </div>
-          <div className={`${galleryStyles["item-container"]} md:!pl-0`}>
-            <div className={galleryStyles["gallery-container"]}>
+          <div className={`${galleryStyles['item-container']} md:!pl-0`}>
+            <div className={galleryStyles['gallery-container']}>
               <GalleryComponent photos={weddingPhotos} />
             </div>
             <h3 className={galleryStyles.title}>Wedding</h3>
@@ -104,10 +114,12 @@ const Index = () => {
         <div className="flex justify-center relative mt-10">
           <YoutubeComponent videos={momentVideos} />
         </div>
-        <h3 className="w-full text-[20px] md:text-[28px] mt-5 text-center">Video Documentaries</h3>
+        <h3 className="w-full text-[16px] md:text-[24px] mt-3 text-center font-medium">
+          Video Documentaries
+        </h3>
       </Section>
       <div
-        className={`${styles["background-2"]} w-full pt-[100px] pb-[150px] relative after:content-[''] after:absolute after:left-0 after:top-0 after:bottom-0 after:right-0 after:z-2`}
+        className={`${styles['background-2']} w-full pt-[100px] pb-[150px] relative after:content-[''] after:absolute after:left-0 after:top-0 after:bottom-0 after:right-0 after:z-2`}
       >
         <Section text="white">
           <div className="mb-10 z-10 relative">
@@ -132,7 +144,7 @@ const Index = () => {
             size="large"
             hoverColor="black"
             className="relative z-10"
-            onClick={() => router.push("/about")}
+            onClick={() => router.push('/about')}
           >
             Read more
           </Button>
@@ -152,7 +164,7 @@ const Index = () => {
             <div className="flex flex-col items-center md:flex-row ml-0 md:ml-12 md:border-black border-0 md:border-l-4 border-solid">
               <div className="w-[300px] h-[150px] md:w-[120px] md:h-[120px] lg:w-[200px] md:w-[120px] md:h-[120px] lg:h-[120px] relative">
                 <Image
-                  src={require("../public/assets/partner/itdri.png")}
+                  src={require('../public/assets/partner/itdri.png')}
                   layout="fill"
                   loading="lazy"
                   objectFit="contain"
@@ -162,7 +174,7 @@ const Index = () => {
               </div>
               <div className="w-[150px] h-[150px] md:w-[120px] md:h-[120px] lg:w-[100px] md:w-[120px] md:h-[120px] lg:h-[120px] relative">
                 <Image
-                  src={require("../public/assets/partner/inspektorat-jawa-barat.png")}
+                  src={require('../public/assets/partner/inspektorat-jawa-barat.png')}
                   layout="fill"
                   loading="lazy"
                   objectFit="contain"
@@ -172,7 +184,7 @@ const Index = () => {
               </div>
               <div className="w-[200px] h-[200px] md:w-[120px] md:h-[120px] lg:w-[200px] md:w-[120px] md:h-[120px] lg:h-[120px] relative">
                 <Image
-                  src={require("../public/assets/partner/direktorat-jenderal-kekayaan-negara-kemenkeu.png")}
+                  src={require('../public/assets/partner/direktorat-jenderal-kekayaan-negara-kemenkeu.png')}
                   layout="fill"
                   loading="lazy"
                   objectFit="contain"
@@ -182,7 +194,7 @@ const Index = () => {
               </div>
               <div className="w-[200px] h-[100px] md:w-[120px] md:h-[120px] lg:w-[200px] md:w-[120px] md:h-[120px] lg:h-[120px] relative">
                 <Image
-                  src={require("../public/assets/partner/schlumberger.png")}
+                  src={require('../public/assets/partner/schlumberger.png')}
                   layout="fill"
                   loading="lazy"
                   objectFit="contain"
@@ -199,7 +211,7 @@ const Index = () => {
               isWide
               className="text-grey-primary border-grey-primary"
               hoverColor="red-secondary"
-              onClick={() => router.push("/clients")}
+              onClick={() => router.push('/clients')}
             >
               View more
             </Button>
@@ -225,7 +237,7 @@ const Index = () => {
                 <a target="_blank" className="flex items-center">
                   <div className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] relative">
                     <Image
-                      src={require("../public/assets/social/instagram.png")}
+                      src={require('../public/assets/social/instagram.png')}
                       layout="fill"
                       loading="lazy"
                       objectFit="contain"
@@ -242,7 +254,7 @@ const Index = () => {
                 <a target="_blank" className="flex items-center">
                   <div className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] relative">
                     <Image
-                      src={require("../public/assets/social/wa.png")}
+                      src={require('../public/assets/social/wa.png')}
                       layout="fill"
                       loading="lazy"
                       objectFit="contain"
@@ -257,7 +269,7 @@ const Index = () => {
             <div className="flex items-center">
               <div className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] relative">
                 <Image
-                  src={require("../public/assets/social/email.png")}
+                  src={require('../public/assets/social/email.png')}
                   layout="fill"
                   loading="lazy"
                   objectFit="contain"
@@ -272,7 +284,7 @@ const Index = () => {
                 <a target="_blank" className="flex items-center">
                   <div className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] relative">
                     <Image
-                      src={require("../public/assets/social/youtube.png")}
+                      src={require('../public/assets/social/youtube.png')}
                       layout="fill"
                       loading="lazy"
                       objectFit="contain"
@@ -291,7 +303,7 @@ const Index = () => {
                 <a target="_blank" className="flex items-center">
                   <div className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] relative">
                     <Image
-                      src={require("../public/assets/social/tiktok.png")}
+                      src={require('../public/assets/social/tiktok.png')}
                       layout="fill"
                       loading="lazy"
                       objectFit="contain"

@@ -8,7 +8,7 @@
 }
 
 .background-2 {
-  background-image: url("../public/background-about-us.jpg");
+  background-image: url('../public/background-about-us.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -19,7 +19,17 @@
 }
 
 .background-about {
-  background-image: url("../public/assets/about/hello-world.jpg");
+  background-image: url('../public/assets/about/hello-world.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  max-width: calc(1280px + 16em);
+  height: 0;
+  padding-top: min(72.91%, 1120px);
+}
+
+.background-about-2 {
+  background-image: url('../public/assets/about/aboutus-bg.png');
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;

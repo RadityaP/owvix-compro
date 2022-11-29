@@ -1,12 +1,12 @@
-import { useEffect } from "react";
-import L from "leaflet";
-import "leaflet/dist/leaflet.css";
-import { MapContainer, TileLayer, Popup, Marker } from "react-leaflet";
+import { useEffect } from 'react';
+import L from 'leaflet';
+import 'leaflet/dist/leaflet.css';
+import { MapContainer, TileLayer, Popup, Marker } from 'react-leaflet';
 
-import iconRetinaUrl from "leaflet/dist/images/marker-icon-2x.png";
-import iconUrl from "leaflet/dist/images/marker-icon.png";
-import shadowUrl from "leaflet/dist/images/marker-shadow.png";
-import Link from "next/link";
+import iconRetinaUrl from 'leaflet/dist/images/marker-icon-2x.png';
+import iconUrl from 'leaflet/dist/images/marker-icon.png';
+import shadowUrl from 'leaflet/dist/images/marker-shadow.png';
+import Link from 'next/link';
 
 const DEFAULT_CENTER = [-6.9259918, 107.5186141];
 
@@ -33,11 +33,11 @@ const Map = () => {
         <Marker position={DEFAULT_CENTER}>
           <Popup>
             <div className="flex flex-col items-center justify-center">
-              <div>Jl. Mahar Martanegara No.150, Baros</div>
-              <Link href="https://www.google.com/maps/place/Jl.+Mahar+Martanegara+No.150,+Baros,+Kec.+Cimahi+Tengah,+Kota+Cimahi,+Jawa+Barat+40522/@-6.9002391,107.5480031,17z/data=!3m1!4b1!4m5!3m4!1s0x2e68e5b9c19b021d:0xc875b4f4e902d33!8m2!3d-6.9002391!4d107.5480031">
+              <div>Owvix Creative, Jl. Mahar Martanegara No.24</div>
+              <Link href="https://www.google.co.id/maps/place/Owvix+Creative/@-6.900284,107.5486165,17z/data=!3m1!4b1!4m5!3m4!1s0x2e68e54743edf89b:0x70d8e85c4248ddaa!8m2!3d-6.900284!4d107.5486165">
                 <a
-                  target={"_blank"}
-                  className="no-underline text-black hover:underline hover:text-blue-500 mt-2"
+                  target={'_blank'}
+                  className="no-underline text-black hover:underline hover:text-blue-500 mt-2 hover:cursor-pointer"
                 >
                   Open in google maps
                 </a>

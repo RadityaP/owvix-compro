@@ -39,19 +39,20 @@ const Index = () => {
             </h1>
           </div>
           <div className="">
-            <span className="mr-2">Video Production</span> | <span className="mx-2">Film</span> |
-            <span className="mx-2">Web Series</span> | <span className="mx-2">Video Promotion</span>{' '}
-            | <span className="mx-2">Company Profile </span>|{' '}
-            <span className="ml-2">Animation</span>
+            <span className="mx-2 md:mr-2">Video Production</span> |{' '}
+            <span className="mx-2">Film</span> |<span className="mx-2">Web Series</span> |{' '}
+            <span className="mx-2">Video Promotion</span> |{' '}
+            <span className="mx-2">Company Profile </span>| <span className="ml-2">Animation</span>
           </div>
           <div className="">
-            <span className="mr-2">Moment Documentaries</span> | <span className="mx-2">Event</span>{' '}
-            | <span className="mx-2">Wedding</span> | <span className="mx-2">Prewedding</span> |{' '}
-            <span className="ml-2">Graduation</span>
+            <span className="mx-2 md:mr-2">Moment Documentaries</span> |{' '}
+            <span className="mx-2">Event</span> | <span className="mx-2">Wedding</span> |{' '}
+            <span className="mx-2">Prewedding</span> | <span className="ml-2">Graduation</span>
           </div>
           <div className="">
-            <span className="mr-2">Advertising</span> | <span className="mx-2">Product</span> |{' '}
-            <span className="mx-2">Year Book</span> | <span className="ml-2">Album</span>
+            <span className="mx-2 md:mr-2">Advertising</span> |{' '}
+            <span className="mx-2">Product</span> | <span className="mx-2">Year Book</span> |{' '}
+            <span className="ml-2">Album</span>
           </div>
         </Section>
       </div>

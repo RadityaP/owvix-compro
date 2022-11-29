@@ -3,7 +3,8 @@ import styles from '../styles/main.module.css';
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
 import Section from '../components/global/section';
-import Name from '../components/specific/about/name';
+import Link from 'next/link';
+// import Name from '../components/specific/about/name';
 // import Picture from "../components/specific/about/picture";
 
 const Picture = dynamic(() => import('../components/specific/about/picture'));
@@ -116,6 +117,108 @@ const Index = () => {
         <div className="flex flex-col md:flex-row items-stretch md:px-16">
           <Picture image={'temy'} title={'CONTENT CREATOR'} name={'TEMY'} />
           <Picture isRight image={'jo'} title={'PROJECT RESEARCHER'} name={'JORDAN'} />
+        </div>
+      </Section>
+      <Section text="white">
+        <div className="flex md:flex-row flex-col gap-[30px] my-5 md:my-12 items-center md:items-start">
+          <div className="basis-6/12 text-center md:text-right mb-4 md:mb-0">
+            <h1 className="text-[28px] md:text-[56px] font-bold m-0 mt-[-10px] md:mt-[-20px]">
+              CONNECT
+            </h1>
+            <h1 className="text-[28px] md:text-[56px] font-bold m-0 mt-[-10px] md:mt-[-20px]">
+              WITH
+            </h1>
+            <h1 className="text-[28px] md:text-[56px] font-bold m-0 mt-[-10px] md:mt-[-20px]">
+              US
+            </h1>
+          </div>
+          <div className="basis-6/12 flex flex-col gap-[20px]">
+            <div className="flex items-center">
+              <Link href="https://www.instagram.com/owvix/">
+                <a target="_blank" className="flex items-center">
+                  <div className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] relative">
+                    <Image
+                      src={require('../public/assets/social/instagram.png')}
+                      layout="fill"
+                      loading="lazy"
+                      objectFit="contain"
+                      // placeholder="blur"
+                      alt="partner1"
+                    ></Image>
+                  </div>
+                  <div className="text-[16px] md:text-[18px] font-semibold ml-5">Ovwix</div>
+                </a>
+              </Link>
+            </div>
+            <div className="flex items-center">
+              <Link href="https://api.whatsapp.com/send?phone=6282120913001&text=Hallo%20Owvix,%20bisa%20kirim%20pricelistnya">
+                <a target="_blank" className="flex items-center">
+                  <div className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] relative">
+                    <Image
+                      src={require('../public/assets/social/wa.png')}
+                      layout="fill"
+                      loading="lazy"
+                      objectFit="contain"
+                      // placeholder="blur"
+                      alt="partner1"
+                    ></Image>
+                  </div>
+                  <div className="text-[16px] md:text-[18px] font-semibold ml-5">082120913001</div>
+                </a>
+              </Link>
+            </div>
+            <div className="flex items-center">
+              <div className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] relative">
+                <Image
+                  src={require('../public/assets/social/email.png')}
+                  layout="fill"
+                  loading="lazy"
+                  objectFit="contain"
+                  // placeholder="blur"
+                  alt="partner1"
+                ></Image>
+              </div>
+              <div className="text-[16px] md:text-[18px] font-semibold ml-5">owvixx@gmail.com</div>
+            </div>
+            <div className="flex items-center">
+              <Link href="https://www.youtube.com/channel/UCHXAkKY9qExHUL5-Ixxu2nQ">
+                <a target="_blank" className="flex items-center">
+                  <div className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] relative">
+                    <Image
+                      src={require('../public/assets/social/youtube.png')}
+                      layout="fill"
+                      loading="lazy"
+                      objectFit="contain"
+                      // placeholder="blur"
+                      alt="partner1"
+                    ></Image>
+                  </div>
+                  <div className="text-[16px] md:text-[18px] font-semibold ml-5">
+                    Owvix Creative
+                  </div>
+                </a>
+              </Link>
+            </div>
+            <div className="flex items-center">
+              <Link href="https://www.tiktok.com/@owvixcreative">
+                <a target="_blank" className="flex items-center">
+                  <div className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] relative">
+                    <Image
+                      src={require('../public/assets/social/tiktok.png')}
+                      layout="fill"
+                      loading="lazy"
+                      objectFit="contain"
+                      // placeholder="blur"
+                      alt="partner1"
+                    ></Image>
+                  </div>
+                  <div className="text-[16px] md:text-[18px] font-semibold ml-5">
+                    Ovwix Creative
+                  </div>
+                </a>
+              </Link>
+            </div>
+          </div>
         </div>
       </Section>
     </Container>

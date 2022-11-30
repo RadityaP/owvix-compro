@@ -246,7 +246,7 @@ const Index = () => {
                       alt="partner1"
                     ></Image>
                   </div>
-                  <div className="text-[16px] md:text-[18px] font-semibold ml-5">Ovwix</div>
+                  <div className="text-[16px] md:text-[18px] font-semibold ml-5">Owvix</div>
                 </a>
               </Link>
             </div>
@@ -313,7 +313,7 @@ const Index = () => {
                     ></Image>
                   </div>
                   <div className="text-[16px] md:text-[18px] font-semibold ml-5">
-                    Ovwix Creative
+                    Owvix Creative
                   </div>
                 </a>
               </Link>

@@ -8,7 +8,7 @@ import iconUrl from 'leaflet/dist/images/marker-icon.png';
 import shadowUrl from 'leaflet/dist/images/marker-shadow.png';
 import Link from 'next/link';
 
-const DEFAULT_CENTER = [-6.9259918, 107.5186141];
+const DEFAULT_CENTER = [-6.900284, 107.5486165];
 
 const Map = () => {
   useEffect(() => {
@@ -30,7 +30,7 @@ const Map = () => {
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         />
-        <Marker position={DEFAULT_CENTER}>
+        <Marker position={DEFAULT_CENTER} draggable={true} animate={true}>
           <Popup>
             <div className="flex flex-col items-center justify-center">
               <div>Owvix Creative, Jl. Mahar Martanegara No.24</div>

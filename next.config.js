@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const withImages = require("next-images");
+const withImages = require('next-images');
 
 const nextConfig = {
   reactStrictMode: true,
@@ -9,12 +9,12 @@ const nextConfig = {
     disableStaticImages: true,
     remotePatterns: [
       {
-        protocol: "https",
-        hostname: "lh5.googleusercontent.com",
+        protocol: 'https',
+        hostname: 'owvix.com',
       },
       {
-        protocol: "https",
-        hostname: "img.youtube.com",
+        protocol: 'https',
+        hostname: 'img.youtube.com',
       },
     ],
   },

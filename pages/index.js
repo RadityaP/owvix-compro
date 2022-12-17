@@ -165,7 +165,7 @@ const Index = () => {
             <div className="flex flex-col items-center md:flex-row ml-0 md:ml-12 md:border-black border-0 md:border-l-4 border-solid">
               <div className="w-[300px] h-[150px] md:w-[120px] md:h-[120px] lg:w-[200px] md:w-[120px] md:h-[120px] lg:h-[120px] relative">
                 <Image
-                  src={require('../public/assets/partner/itdri.png')}
+                  src={'https://owvix.com/assets/partner/itdri.png'}
                   layout="fill"
                   loading="lazy"
                   objectFit="contain"
@@ -175,7 +175,7 @@ const Index = () => {
               </div>
               <div className="w-[150px] h-[150px] md:w-[120px] md:h-[120px] lg:w-[100px] md:w-[120px] md:h-[120px] lg:h-[120px] relative">
                 <Image
-                  src={require('../public/assets/partner/inspektorat-jawa-barat.png')}
+                  src={'https://owvix.com/assets/partner/inspektorat-jawa-barat.png'}
                   layout="fill"
                   loading="lazy"
                   objectFit="contain"
@@ -185,7 +185,9 @@ const Index = () => {
               </div>
               <div className="w-[200px] h-[200px] md:w-[120px] md:h-[120px] lg:w-[200px] md:w-[120px] md:h-[120px] lg:h-[120px] relative">
                 <Image
-                  src={require('../public/assets/partner/direktorat-jenderal-kekayaan-negara-kemenkeu.png')}
+                  src={
+                    'https://owvix.com/assets/partner/direktorat-jenderal-kekayaan-negara-kemenkeu.png'
+                  }
                   layout="fill"
                   loading="lazy"
                   objectFit="contain"
@@ -195,7 +197,7 @@ const Index = () => {
               </div>
               <div className="w-[200px] h-[100px] md:w-[120px] md:h-[120px] lg:w-[200px] md:w-[120px] md:h-[120px] lg:h-[120px] relative">
                 <Image
-                  src={require('../public/assets/partner/schlumberger.png')}
+                  src={'https://owvix.com/assets/partner/schlumberger.png'}
                   layout="fill"
                   loading="lazy"
                   objectFit="contain"
@@ -238,7 +240,7 @@ const Index = () => {
                 <a target="_blank" className="flex items-center">
                   <div className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] relative">
                     <Image
-                      src={require('../public/assets/social/instagram.png')}
+                      src={'https://owvix.com/assets/social/instagram.png'}
                       layout="fill"
                       loading="lazy"
                       objectFit="contain"
@@ -255,7 +257,7 @@ const Index = () => {
                 <a target="_blank" className="flex items-center">
                   <div className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] relative">
                     <Image
-                      src={require('../public/assets/social/wa.png')}
+                      src={'https://owvix.com/assets/social/wa.png'}
                       layout="fill"
                       loading="lazy"
                       objectFit="contain"
@@ -270,7 +272,7 @@ const Index = () => {
             <div className="flex items-center">
               <div className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] relative">
                 <Image
-                  src={require('../public/assets/social/email.png')}
+                  src={'https://owvix.com/assets/social/email.png'}
                   layout="fill"
                   loading="lazy"
                   objectFit="contain"
@@ -285,7 +287,7 @@ const Index = () => {
                 <a target="_blank" className="flex items-center">
                   <div className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] relative">
                     <Image
-                      src={require('../public/assets/social/youtube.png')}
+                      src={'https://owvix.com/assets/social/youtube.png'}
                       layout="fill"
                       loading="lazy"
                       objectFit="contain"
@@ -304,7 +306,7 @@ const Index = () => {
                 <a target="_blank" className="flex items-center">
                   <div className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] relative">
                     <Image
-                      src={require('../public/assets/social/tiktok.png')}
+                      src={'https://owvix.com/assets/social/tiktok.png'}
                       layout="fill"
                       loading="lazy"
                       objectFit="contain"

@@ -26,7 +26,7 @@ const Index = () => {
           <div className="basis-6/12 h-fit py-0 md:py-5 md:px-16 text-justify flex justify-center md:justify-start items-center h-auto">
             <div className="md:w-[500px] md:h-[500px] w-[200px] h-[200px] relative">
               <Image
-                src={require('../public/assets/logo-white-no-text.png')}
+                src={'https://owvix.com/assets/logo-white-no-text.png'}
                 layout="fill"
                 objectFit="contain"
                 alt="logo"
@@ -138,7 +138,7 @@ const Index = () => {
                 <a target="_blank" className="flex items-center">
                   <div className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] relative">
                     <Image
-                      src={require('../public/assets/social/instagram.png')}
+                      src={'https://owvix.com/assets/social/instagram.png'}
                       layout="fill"
                       loading="lazy"
                       objectFit="contain"
@@ -155,7 +155,7 @@ const Index = () => {
                 <a target="_blank" className="flex items-center">
                   <div className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] relative">
                     <Image
-                      src={require('../public/assets/social/wa.png')}
+                      src="https://owvix.com/assets/social/wa.png"
                       layout="fill"
                       loading="lazy"
                       objectFit="contain"
@@ -170,7 +170,7 @@ const Index = () => {
             <div className="flex items-center">
               <div className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] relative">
                 <Image
-                  src={require('../public/assets/social/email.png')}
+                  src={'https://owvix.com/assets/social/email.png'}
                   layout="fill"
                   loading="lazy"
                   objectFit="contain"
@@ -185,7 +185,7 @@ const Index = () => {
                 <a target="_blank" className="flex items-center">
                   <div className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] relative">
                     <Image
-                      src={require('../public/assets/social/youtube.png')}
+                      src={'https://owvix.com/assets/social/youtube.png'}
                       layout="fill"
                       loading="lazy"
                       objectFit="contain"
@@ -204,7 +204,7 @@ const Index = () => {
                 <a target="_blank" className="flex items-center">
                   <div className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] relative">
                     <Image
-                      src={require('../public/assets/social/tiktok.png')}
+                      src={'https://owvix.com/assets/social/tiktok.png'}
                       layout="fill"
                       loading="lazy"
                       objectFit="contain"

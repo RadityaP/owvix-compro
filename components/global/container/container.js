@@ -17,7 +17,7 @@ const Container = (props) => {
               West Java"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/logo-white-no-text.png" />
+        <link rel="icon" href="/6-no-text.png" />
       </Head>
       <Navbar />
       <div className={`flex justify-center flex-col bg-${background}`}>{props.children}</div>

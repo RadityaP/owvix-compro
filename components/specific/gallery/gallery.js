@@ -1,9 +1,9 @@
-import React, { useState, useCallback } from "react";
-import Gallery from "react-photo-gallery";
-import Carousel, { Modal, ModalGateway } from "react-images";
-import Image from "next/image";
-import styles from "../../../styles/galeri.module.css";
-import CustomRenderer from "./customImageRenderer";
+import React, { useState, useCallback } from 'react';
+import Gallery from 'react-photo-gallery';
+import Carousel, { Modal, ModalGateway } from 'react-images';
+import Image from 'next/image';
+import styles from '../../../styles/galeri.module.css';
+import CustomRenderer from './customImageRenderer';
 
 const GalleryComponent = ({ photos }) => {
   const [index, setIndex] = useState(0);
@@ -24,9 +24,9 @@ const GalleryComponent = ({ photos }) => {
     ({ index, left, top, key, photo, direction }) => (
       <CustomRenderer
         key={key}
-        margin={"2px"}
+        margin={'2px'}
         index={index}
-        direction={"column"}
+        direction={'column'}
         photo={photo}
         left={left}
         onClick={(i) => openLightbox(i)}
@@ -34,31 +34,31 @@ const GalleryComponent = ({ photos }) => {
       />
     ),
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    []
+    [],
   );
 
   return (
     <>
       <div
-        className={`${styles["arrow-container"]} ${styles.left}`}
+        className={`${styles['arrow-container']} ${styles.left}`}
         style={{ opacity: index === 0 ? 0 : 1 }}
         onClick={() => (index === 0 ? {} : setIndex(index - 1))}
       >
         <Image
-          src={require("../../../public/assets/chevron-pointing-to-the-left.png")}
+          src="https://owvix.com/assets/chevron-pointing-to-the-left.png"
           alt="asdad"
           height={14}
           width={14}
         />
       </div>
       <div
-        className={index === 2 ? `${styles[`container-animation-${index}`]}` : ""}
+        className={index === 2 ? `${styles[`container-animation-${index}`]}` : ''}
         style={{
-          transform: index === 2 ? "" : `translate3d(${-index * 100}%, 0, 0)`,
-          transition: "ease-in-out 1000ms",
+          transform: index === 2 ? '' : `translate3d(${-index * 100}%, 0, 0)`,
+          transition: 'ease-in-out 1000ms',
         }}
       >
-        <Gallery photos={photos} direction={"column"} columns={7} renderImage={imageRenderer} />
+        <Gallery photos={photos} direction={'column'} columns={7} renderImage={imageRenderer} />
         <ModalGateway>
           {viewerIsOpen ? (
             <Modal onClose={closeLightbox}>
@@ -68,7 +68,7 @@ const GalleryComponent = ({ photos }) => {
                   ...x,
                   alt: x.title,
                   srcset: x.srcSet,
-                  caption: <div style={{ fontSize: "40px", textAlign: "center" }}>{x.title}</div>,
+                  caption: <div style={{ fontSize: '40px', textAlign: 'center' }}>{x.title}</div>,
                 }))}
               />
             </Modal>
@@ -77,11 +77,11 @@ const GalleryComponent = ({ photos }) => {
       </div>
       <div
         style={{ opacity: index === 2 ? 0 : 1 }}
-        className={`${styles["arrow-container"]} ${styles.right}`}
+        className={`${styles['arrow-container']} ${styles.right}`}
         onClick={() => (index === 2 ? {} : setIndex(index + 1))}
       >
         <Image
-          src={require("../../../public/assets/right-chevron.png")}
+          src="https://owvix.com/assets/right-chevron.png"
           alt="asdad"
           height={14}
           width={14}

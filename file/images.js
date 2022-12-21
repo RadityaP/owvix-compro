@@ -268,20 +268,17 @@ export const birthdayPhotos = [
     src: 'https://owvix.com/images/assets/documentation/birthday/alyssa_mother_party.jpg',
     width: 3,
     height: 2,
-    title: "Alyssa Mother's Party",
   },
   {
     src: 'https://owvix.com/images/assets/documentation/birthday/alyssa_mother_party_3.jpg',
     width: 3,
     height: 2,
-    title: "Alyssa Mother's Party",
   },
 
   {
     src: 'https://owvix.com/images/assets/documentation/birthday/alyssa_mother_party_2.jpg',
     width: 3,
     height: 2,
-    title: "Alyssa Mother's Party",
   },
   {
     src: 'https://owvix.com/images/assets/documentation/birthday/annasya_birthday_party.jpg',
@@ -293,7 +290,6 @@ export const birthdayPhotos = [
     src: 'https://owvix.com/images/assets/documentation/birthday/alyssa_mother_party_3.jpg',
     width: 3,
     height: 2,
-    title: "Alyssa Mother's Party",
   },
   {
     src: 'https://owvix.com/images/assets/documentation/birthday/annasya_birthday_party_2.jpg',
@@ -311,7 +307,6 @@ export const birthdayPhotos = [
     src: 'https://owvix.com/images/assets/documentation/birthday/naira_birthday_party_6.jpg',
     width: 2,
     height: 2,
-    title: 'Naira Birthday Party',
   },
   {
     src: 'https://owvix.com/images/assets/documentation/birthday/naira_birthday_party_7.jpg',
@@ -323,7 +318,6 @@ export const birthdayPhotos = [
     src: 'https://owvix.com/images/assets/documentation/birthday/alyssa_mother_party_7.jpg',
     width: 3,
     height: 2,
-    title: "Alyssa Mother's Party",
   },
   {
     src: 'https://owvix.com/images/assets/documentation/birthday/annasya_birthday_party_3.jpg',
@@ -365,7 +359,6 @@ export const birthdayPhotos = [
     src: 'https://owvix.com/images/assets/documentation/birthday/naira_birthday_party_4.jpg',
     width: 3,
     height: 2,
-    title: 'Naira Birthday Party',
   },
   {
     src: 'https://owvix.com/images/assets/documentation/birthday/naira_birthday_party_3.jpg',

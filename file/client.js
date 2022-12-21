@@ -45,7 +45,6 @@ export const photos = [
     src: 'https://owvix.com/images/assets/clients/surveyor.png',
     width: 1,
     height: 1,
-    title: 'Surveyor Indonesia',
   },
 
   {
@@ -101,7 +100,6 @@ export const photos = [
     src: 'https://owvix.com/images/assets/clients/telkom-university.png',
     width: 1,
     height: 1,
-    title: 'Telkom University',
   },
   {
     src: 'https://owvix.com/images/assets/clients/meiyuave.png',
@@ -168,14 +166,12 @@ export const photos = [
     src: 'https://owvix.com/images/assets/clients/hmi.png',
     width: 1,
     height: 1,
-    title: 'HMI Cabang Bandung',
   },
 
   {
     src: 'https://owvix.com/images/assets/clients/alisa.png',
     width: 1,
     height: 1,
-    title: 'Alisa',
   },
 
   {
@@ -188,21 +184,18 @@ export const photos = [
     src: 'https://owvix.com/images/assets/clients/sinestesia.png',
     width: 1,
     height: 1,
-    title: 'Sinestesia',
   },
 
   {
     src: 'https://owvix.com/images/assets/clients/pef-2018.png',
     width: 1,
     height: 1,
-    title: 'PEF 2018',
   },
 
   {
     src: 'https://owvix.com/images/assets/clients/pef-2019.png',
     width: 1,
     height: 1,
-    title: 'PEF 2019',
   },
 
   {
@@ -215,7 +208,6 @@ export const photos = [
     src: 'https://owvix.com/images/assets/clients/psm-unpad.png',
     width: 1,
     height: 1,
-    title: 'Paduan Suara Mahasiswa Universitas Padjadjaran',
   },
 
   {

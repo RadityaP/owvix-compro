@@ -25,6 +25,23 @@ const GalleryComponent = dynamic(() => import('../components/specific/gallery'),
 });
 const YoutubeComponent = dynamic(() => import('../components/specific/youtube'), {});
 
+const arrayService = [
+  'Video Production',
+  'Film',
+  'Web Series',
+  'Video Promotion',
+  'Company Profile',
+  'Animation',
+  'Moment Documentaries',
+  'Event',
+  'Wedding',
+  'Prewedding',
+  'Graduation',
+  'Advertising',
+  'Product',
+  'Year Book',
+  'Album',
+];
 const Index = () => {
   const router = useRouter();
 
@@ -32,28 +49,33 @@ const Index = () => {
     <Container title="Creative Agency | Owvix Creative" background="black">
       <div className={`${styles['background']} w-full pt-[100px] pb-[150px]`}>
         <Section text="white">
-          <div className="mb-10">
+          <div className="mb-7 md:mb-8">
             <h1 className="text-[50px] md:text-[88px] font-bold m-0">INFINITY</h1>
             <h1 className="text-[50px] md:text-[88px] font-bold mb-0 mt-[-10px] md:mt-[-30px]">
               CREATIVITY.
             </h1>
           </div>
-          <div className="">
-            <span className="mx-2 md:mr-2">Video Production</span> |{' '}
-            <span className="mx-2">Film</span> |<span className="mx-2">Web Series</span> |{' '}
-            <span className="mx-2">Video Promotion</span> |{' '}
-            <span className="mx-2">Company Profile </span>| <span className="ml-2">Animation</span>
+          <div className="w-full sm:w-8/12 md:w-7/12 flex flex-wrap">
+            {arrayService.map((service, index) => {
+              return (
+                <div key={index}>
+                  {index !== arrayService.length - 1 ? (
+                    <>
+                      {service}
+                      <span className="mx-2">|</span>
+                    </>
+                  ) : (
+                    service
+                  )}
+                </div>
+              );
+            })}
           </div>
-          <div className="">
-            <span className="mx-2 md:mr-2">Moment Documentaries</span> |{' '}
-            <span className="mx-2">Event</span> | <span className="mx-2">Wedding</span> |{' '}
-            <span className="mx-2">Prewedding</span> | <span className="ml-2">Graduation</span>
-          </div>
-          <div className="">
-            <span className="mx-2 md:mr-2">Advertising</span> |{' '}
-            <span className="mx-2">Product</span> | <span className="mx-2">Year Book</span> |{' '}
-            <span className="ml-2">Album</span>
-          </div>
+          {/* <div className="w-full sm: w-8/12 md:w-6/12">
+            Video Production | Film | Web Series | Video Promotion | Company Profile | Animation |
+            Moment Documentaries | Event | Wedding | Prewedding | Graduation | Advertising | Product
+            | Year Book | Album
+          </div> */}
         </Section>
       </div>
       <Section text="white">
@@ -69,43 +91,43 @@ const Index = () => {
       <Section text="white">
         <Title text="MOMENT DOCUMENTARIES" size="text-[28px] md:text-[48px] " isCentered></Title>
         <div className={`${galleryStyles.container} gallery-home`}>
-          <div className={`${galleryStyles['item-container']} md:!pl-0`}>
+          <div className={`${galleryStyles['item-container']} `}>
             <div className={galleryStyles['gallery-container']}>
               <GalleryComponent photos={eventPhotos} />
             </div>
             <h3 className={galleryStyles.title}>Events</h3>
           </div>
-          <div className={`${galleryStyles['item-container']} md:!pr-0`}>
+          <div className={`${galleryStyles['item-container']} `}>
             <div className={galleryStyles['gallery-container']}>
               <GalleryComponent photos={graduationPhotos} />
             </div>
             <h3 className={galleryStyles.title}>Graduation</h3>
           </div>
-          <div className={`${galleryStyles['item-container']} md:!pl-0`}>
+          <div className={`${galleryStyles['item-container']} `}>
             <div className={galleryStyles['gallery-container']}>
               <GalleryComponent photos={birthdayPhotos} />
             </div>
             <h3 className={galleryStyles.title}>Birthday</h3>
           </div>
-          <div className={`${galleryStyles['item-container']} md:!pr-0`}>
+          <div className={`${galleryStyles['item-container']} `}>
             <div className={galleryStyles['gallery-container']}>
               <GalleryComponent photos={engagementPhotos} />
             </div>
             <h3 className={galleryStyles.title}>Engagement</h3>
           </div>
-          <div className={`${galleryStyles['item-container']} md:!pl-0`}>
+          <div className={`${galleryStyles['item-container']} `}>
             <div className={galleryStyles['gallery-container']}>
               <GalleryComponent photos={preweddingPhotos} />
             </div>
             <h3 className={galleryStyles.title}>Prewedding</h3>
           </div>
-          <div className={`${galleryStyles['item-container']} md:!pr-0`}>
+          <div className={`${galleryStyles['item-container']} `}>
             <div className={galleryStyles['gallery-container']}>
               <GalleryComponent photos={siramanPhotos} />
             </div>
             <h3 className={galleryStyles.title}>Siraman</h3>
           </div>
-          <div className={`${galleryStyles['item-container']} md:!pl-0`}>
+          <div className={`${galleryStyles['item-container']} `}>
             <div className={galleryStyles['gallery-container']}>
               <GalleryComponent photos={weddingPhotos} />
             </div>
@@ -124,20 +146,20 @@ const Index = () => {
       >
         <Section text="white">
           <div className="mb-10 z-10 relative">
-            <h1 className="text-[40px] md:text-[88px] font-bold m-0">We are </h1>
-            <h1 className="text-[40px] md:text-[88px] font-bold m-0 md:mt-[-30px]">
+            <h1 className="text-[40px] md:text-[88px] font-bold m-0 leading-tight">We are </h1>
+            <h1 className="text-[40px] md:text-[88px] font-bold m-0 leading-tight">
               Owvix Creative.
             </h1>
-            <h1 className="text-[40px] md:text-[88px] font-bold m-0 md:mt-[-30px]">
+            <h1 className="text-[40px] md:text-[88px] font-bold m-0 leading-tight">
               A creative agency
             </h1>
-            <h1 className="text-[40px] md:text-[88px] font-bold m-0 md:mt-[-30px]">
+            <h1 className="text-[40px] md:text-[88px] font-bold m-0 leading-tight">
               that puts moment
             </h1>
-            <h1 className="text-[40px] md:text-[88px] font-bold m-0 md:mt-[-30px]">
+            <h1 className="text-[40px] md:text-[88px] font-bold m-0 leading-tight">
               into something
             </h1>
-            <h1 className="text-[40px] md:text-[88px] font-bold m-0 md:mt-[-30px]">magical.</h1>
+            <h1 className="text-[40px] md:text-[88px] font-bold m-0 leading-tight">magical.</h1>
           </div>
 
           <Button
@@ -165,7 +187,7 @@ const Index = () => {
             <div className="flex flex-col items-center md:flex-row ml-0 md:ml-12 md:border-black border-0 md:border-l-4 border-solid">
               <div className="w-[300px] h-[150px] md:w-[120px] md:h-[120px] lg:w-[200px] md:w-[120px] md:h-[120px] lg:h-[120px] relative">
                 <Image
-                  src={'https://owvix.com/assets/partner/itdri.png'}
+                  src={'https://owvix.com/images/assets/partner/itdri.png'}
                   layout="fill"
                   loading="lazy"
                   objectFit="contain"
@@ -175,7 +197,7 @@ const Index = () => {
               </div>
               <div className="w-[150px] h-[150px] md:w-[120px] md:h-[120px] lg:w-[100px] md:w-[120px] md:h-[120px] lg:h-[120px] relative">
                 <Image
-                  src={'https://owvix.com/assets/partner/inspektorat-jawa-barat.png'}
+                  src={'https://owvix.com/images/assets/partner/inspektorat-jawa-barat.png'}
                   layout="fill"
                   loading="lazy"
                   objectFit="contain"
@@ -186,7 +208,7 @@ const Index = () => {
               <div className="w-[200px] h-[200px] md:w-[120px] md:h-[120px] lg:w-[200px] md:w-[120px] md:h-[120px] lg:h-[120px] relative">
                 <Image
                   src={
-                    'https://owvix.com/assets/partner/direktorat-jenderal-kekayaan-negara-kemenkeu.png'
+                    'https://owvix.com/images/assets/partner/direktorat-jenderal-kekayaan-negara-kemenkeu.png'
                   }
                   layout="fill"
                   loading="lazy"
@@ -197,7 +219,7 @@ const Index = () => {
               </div>
               <div className="w-[200px] h-[100px] md:w-[120px] md:h-[120px] lg:w-[200px] md:w-[120px] md:h-[120px] lg:h-[120px] relative">
                 <Image
-                  src={'https://owvix.com/assets/partner/schlumberger.png'}
+                  src={'https://owvix.com/images/assets/partner/schlumberger.png'}
                   layout="fill"
                   loading="lazy"
                   objectFit="contain"
@@ -240,7 +262,7 @@ const Index = () => {
                 <a target="_blank" className="flex items-center">
                   <div className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] relative">
                     <Image
-                      src={'https://owvix.com/assets/social/instagram.png'}
+                      src={'https://owvix.com/images/assets/social/instagram.png'}
                       layout="fill"
                       loading="lazy"
                       objectFit="contain"
@@ -257,7 +279,7 @@ const Index = () => {
                 <a target="_blank" className="flex items-center">
                   <div className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] relative">
                     <Image
-                      src={'https://owvix.com/assets/social/wa.png'}
+                      src={'https://owvix.com/images/assets/social/wa.png'}
                       layout="fill"
                       loading="lazy"
                       objectFit="contain"
@@ -272,7 +294,7 @@ const Index = () => {
             <div className="flex items-center">
               <div className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] relative">
                 <Image
-                  src={'https://owvix.com/assets/social/email.png'}
+                  src={'https://owvix.com/images/assets/social/email.png'}
                   layout="fill"
                   loading="lazy"
                   objectFit="contain"
@@ -287,7 +309,7 @@ const Index = () => {
                 <a target="_blank" className="flex items-center">
                   <div className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] relative">
                     <Image
-                      src={'https://owvix.com/assets/social/youtube.png'}
+                      src={'https://owvix.com/images/assets/social/youtube.png'}
                       layout="fill"
                       loading="lazy"
                       objectFit="contain"
@@ -306,7 +328,7 @@ const Index = () => {
                 <a target="_blank" className="flex items-center">
                   <div className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] relative">
                     <Image
-                      src={'https://owvix.com/assets/social/tiktok.png'}
+                      src={'https://owvix.com/images/assets/social/tiktok.png'}
                       layout="fill"
                       loading="lazy"
                       objectFit="contain"

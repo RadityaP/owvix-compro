@@ -14,6 +14,13 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap"
           rel="stylesheet"
         ></link>
+        <link rel="icon" href="/images/assets/logo-white-no-text.png" />
+        <meta
+          name="description"
+          content="Owvix Photography was formed with limited resources, but was
+              able to produce a great output that could compete in the creative agency industry in
+              West Java"
+        />
       </Head>
       <body>
         <Main />

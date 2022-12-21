@@ -45,7 +45,7 @@ const GalleryComponent = ({ photos }) => {
         onClick={() => (index === 0 ? {} : setIndex(index - 1))}
       >
         <Image
-          src="https://owvix.com/assets/chevron-pointing-to-the-left.png"
+          src="https://owvix.com/images/assets/chevron-pointing-to-the-left.png"
           alt="asdad"
           height={14}
           width={14}
@@ -81,7 +81,7 @@ const GalleryComponent = ({ photos }) => {
         onClick={() => (index === 2 ? {} : setIndex(index + 1))}
       >
         <Image
-          src="https://owvix.com/assets/right-chevron.png"
+          src="https://owvix.com/images/assets/right-chevron.png"
           alt="asdad"
           height={14}
           width={14}

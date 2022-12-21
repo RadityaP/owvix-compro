@@ -19,15 +19,15 @@ const Youtube = ({ videos, showTitle }) => {
         }}
       >
         <Image
-          src="https://owvix.com/assets/chevron-pointing-to-the-left.png"
+          src="https://owvix.com/images/assets/chevron-pointing-to-the-left.png"
           alt="asdad"
           height={14}
           width={14}
         />
       </div>
-      <div className="overflow-hidden max-w-[1000px]">
+      <div className="overflow-hidden max-w-[1000px] w-full">
         <div
-          className="whitespace-nowrap duration-1000 ease-in-out"
+          className="whitespace-nowrap duration-1000 w-full ease-in-out"
           style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
         >
           {videos.map((thumb, index) => {
@@ -55,7 +55,7 @@ const Youtube = ({ videos, showTitle }) => {
         }}
       >
         <Image
-          src="https://owvix.com/assets/right-chevron.png"
+          src="https://owvix.com/images/assets/right-chevron.png"
           alt="asdad"
           height={14}
           width={14}

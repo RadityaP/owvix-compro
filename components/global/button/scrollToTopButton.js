@@ -19,7 +19,7 @@ const ScrollToTopButton = () => {
       } fixed bottom-[20px] right-[20px] w-10 h-10 bg-gray-400 rounded-lg flex items-center justify-center cursor-pointer hover:bg-gray-200 transition-all duration-300`}
     >
       <Image
-        src="https://owvix.com/assets/chevron-arrow-up.png"
+        src="https://owvix.com/images/assets/chevron-arrow-up.png"
         alt="chevron top"
         height={20}
         width={20}

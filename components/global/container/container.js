@@ -16,8 +16,10 @@ const Container = (props) => {
               able to produce a great output that could compete in the creative agency industry in
               West Java"
         />
+        <meta charset="utf-8" />
+        <meta name="keywords" content="photography, agency, creative" />
+        <meta name="robots" content="follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/6-no-text.png" />
       </Head>
       <Navbar />
       <div className={`flex justify-center flex-col bg-${background}`}>{props.children}</div>

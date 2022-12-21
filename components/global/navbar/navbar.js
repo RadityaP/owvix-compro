@@ -32,7 +32,7 @@ const Navbar = () => {
         <Link href={'/'} className="flex items-center text-white text-3xl">
           <div className="w-[70px] h-[70px] md:w-[100px] md:h-[100px] relative cursor-pointer">
             <Image
-              src="https://owvix.com/assets/logo-white.png"
+              src="https://owvix.com/images/assets/logo-white.png"
               alt="logo"
               layout="fill"
               objectFit="contain"

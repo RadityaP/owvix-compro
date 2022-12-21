@@ -9,18 +9,18 @@ const Index = ({ image, isRight, name, title }) => {
         <Image
           src={
             image === 'rinaldy'
-              ? 'https://owvix.com/assets/about/rinaldy.jpeg'
+              ? 'https://owvix.com/images/assets/about/rinaldy.jpeg'
               : image === 'salman'
-              ? 'https://owvix.com/assets/about/salman.jpeg'
+              ? 'https://owvix.com/images/assets/about/salman.jpeg'
               : image === 'sham'
-              ? 'https://owvix.com/assets/about/shammil.jpeg'
+              ? 'https://owvix.com/images/assets/about/shammil.jpeg'
               : image === 'nanda'
-              ? 'https://owvix.com/assets/about/nanda.jpg'
+              ? 'https://owvix.com/images/assets/about/nanda.jpg'
               : image === 'temy'
-              ? 'https://owvix.com/assets/about/temy.jpeg'
+              ? 'https://owvix.com/images/assets/about/temy.jpeg'
               : image === 'tsamara'
-              ? 'https://owvix.com/assets/about/tsamara.jpeg'
-              : 'https://owvix.com/assets/about/jo.jpg'
+              ? 'https://owvix.com/images/assets/about/tsamara.jpeg'
+              : 'https://owvix.com/images/assets/about/jo.jpg'
           }
           layout="fill"
           objectFit="contain"
@@ -38,18 +38,18 @@ const Index = ({ image, isRight, name, title }) => {
         <Image
           src={
             image === 'rinaldy'
-              ? 'https://owvix.com/assets/about/rinaldy.jpeg'
+              ? 'https://owvix.com/images/assets/about/rinaldy.jpeg'
               : image === 'salman'
-              ? 'https://owvix.com/assets/about/salman.jpeg'
+              ? 'https://owvix.com/images/assets/about/salman.jpeg'
               : image === 'sham'
-              ? 'https://owvix.com/assets/about/shammil.jpeg'
+              ? 'https://owvix.com/images/assets/about/shammil.jpeg'
               : image === 'nanda'
-              ? 'https://owvix.com/assets/about/nanda.jpg'
+              ? 'https://owvix.com/images/assets/about/nanda.jpg'
               : image === 'temy'
-              ? 'https://owvix.com/assets/about/temy.jpeg'
+              ? 'https://owvix.com/images/assets/about/temy.jpeg'
               : image === 'tsamara'
-              ? 'https://owvix.com/assets/about/tsamara.jpeg'
-              : 'https://owvix.com/assets/about/jo.jpg'
+              ? 'https://owvix.com/images/assets/about/tsamara.jpeg'
+              : 'https://owvix.com/images/assets/about/jo.jpg'
           }
           layout="fill"
           objectFit="contain"

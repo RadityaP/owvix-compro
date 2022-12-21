@@ -14,17 +14,19 @@ const Index = () => {
     <Container title="About | Creative Agency | Owvix Creative" background="black">
       <Section text="white text-center md:text-left">
         <div>
-          <h1 className="text-[32px] md:text-[88px] font-bold m-0">ABOUT</h1>
-          <h1 className="text-[32px] md:text-[88px] font-bold m-0 mt-[-10px] md:mt-[-30px]">US</h1>
+          <h1 className="text-[32px] md:text-[56px] lg:text-[88px] font-bold m-0">ABOUT</h1>
+          <h1 className="text-[32px] md:text-[56px] lg:text-[88px] font-bold m-0 mt-[-10px] md:mt-[-30px]">
+            US
+          </h1>
         </div>
       </Section>
       <div className="flex justify-center">
         <div className={`${styles['background-about']} w-full relative`}></div>
       </div>
       <Section text="white">
-        <div className="flex flex-col md:flex-row items-stretch">
-          <div className="basis-6/12 h-fit py-0 md:py-5 md:px-16 text-justify flex justify-center md:justify-start items-center h-auto">
-            <div className="md:w-[500px] md:h-[500px] w-[200px] h-[200px] relative">
+        <div className="flex flex-col lg:flex-row items-stretch">
+          <div className="basis-6/12 h-fit py-0 lg:py-5 lg:px-16 text-justify flex justify-center lg:justify-start items-center h-auto">
+            <div className="lg:w-[500px] lg:h-[500px] w-[200px] h-[200px] relative">
               <Image
                 src={'https://owvix.com/images/assets/logo-white-no-text.png'}
                 layout="fill"
@@ -36,8 +38,8 @@ const Index = () => {
               ></Image>
             </div>
           </div>
-          <div className="basis-6/12 flex items-center px-2 md:px-16">
-            <h6 className="text-sm md:text-lg font-normal h-fit md:pl-16 md:py-5 text-center md:text-justify md:border-l-white md:border-0 md:border-l-2 md:border-solid">
+          <div className="basis-6/12 flex items-center px-2 lg:px-16">
+            <h6 className="text-sm lg:text-lg font-normal h-fit lg:pl-16 lg:py-5 text-center lg:text-justify lg:border-l-white lg:border-0 lg:border-l-2 lg:border-solid">
               Owvix was founded by Muhammad Rinaldy Syarifullah, the goal is to create a flexible
               and reliable creative team to cover a lot of documentation needs for graduations,
               wedding, and product advertisement in the scope of Bandung and especially in West Java
@@ -51,9 +53,9 @@ const Index = () => {
         </div>
       </Section>
       <Section text="white">
-        <div className="flex flex-col md:flex-row items-stretch px-2 md:px-0">
+        <div className="flex flex-col lg:flex-row items-stretch px-2 lg:px-0">
           <div className="basis-6/12 flex items-center">
-            <h6 className="text-sm md:text-lg font-normal h-fit mb-10 md:mb-0 md:px-16 text-center md:text-justify m-0">
+            <h6 className="text-sm lg:text-lg font-normal h-fit mb-10 lg:mb-0 lg:px-16 text-center lg:text-justify m-0">
               &quot;On March 23 2018, Owvix Photography was formed with limited resources, but was
               able to produce a great output that could compete in the creative agency industry in
               West Java&quot; - M. Rinaldy S.
@@ -63,7 +65,7 @@ const Index = () => {
             </h6>
           </div>
           <div className="basis-6/12 flex items-center">
-            <h6 className="text-sm md:text-lg font-normal h-fit md:px-16 text-center md:text-justify m-0">
+            <h6 className="text-sm lg:text-lg font-normal h-fit lg:px-16 text-center lg:text-justify m-0">
               Within a few years, Owvix not only provided a great services for documentation of
               graduations, weddings or products, but also began to dive deeper by making indie short
               films, also able to create web-series, making motion graphic animations for various
@@ -82,11 +84,13 @@ const Index = () => {
         <div className="flex flex-col md:flex-row items-stretch md:px-16">
           <div className="basis-6/12 text-center md:text-left mb-8 md:mb-0">
             <div>
-              <h1 className="text-[28px] md:text-[88px] font-bold m-0">THE MAN</h1>
-              <h1 className="text-[28px] md:text-[88px] font-bold m-0 mt-[-10px] md:mt-[-30px]">
+              <h1 className="text-[28px] md:text-[56px] lg:text-[88px] font-bold m-0 leading-tight">
+                THE MAN
+              </h1>
+              <h1 className="text-[28px] md:text-[56px] lg:text-[88px] font-bold m-0 leading-tight">
                 BEHIND
               </h1>
-              <h1 className="text-[28px] md:text-[88px] font-bold m-0 mt-[-10px] md:mt-[-30px]">
+              <h1 className="text-[28px] md:text-[56px] lg:text-[88px] font-bold m-0 leading-tight">
                 THE LENS
               </h1>
             </div>

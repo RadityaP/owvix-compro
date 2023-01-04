@@ -45,8 +45,8 @@ export const photos = [
     src: 'https://owvix.com/images/assets/clients/surveyor.png',
     width: 1,
     height: 1,
+    title: 'Surveyor Indonesia',
   },
-
   {
     src: 'https://owvix.com/images/assets/clients/greenpeace.png',
     width: 1,
@@ -95,11 +95,11 @@ export const photos = [
     height: 1,
     title: 'Tokopedia',
   },
-
   {
     src: 'https://owvix.com/images/assets/clients/telkom-university.png',
     width: 1,
     height: 1,
+    title: 'Telkom University',
   },
   {
     src: 'https://owvix.com/images/assets/clients/meiyuave.png',
@@ -143,7 +143,6 @@ export const photos = [
     height: 1,
     title: 'Dhio Adhinugra Verde Resto and Lounge',
   },
-
   {
     src: 'https://owvix.com/images/assets/clients/emina.png',
     width: 1,
@@ -166,14 +165,14 @@ export const photos = [
     src: 'https://owvix.com/images/assets/clients/hmi.png',
     width: 1,
     height: 1,
+    title: 'HMI',
   },
-
   {
     src: 'https://owvix.com/images/assets/clients/alisa.png',
     width: 1,
     height: 1,
+    title: 'Alisa',
   },
-
   {
     src: 'https://owvix.com/images/assets/clients/fakultas-kedokteran-gigi-unpad.png',
     width: 1,
@@ -184,20 +183,20 @@ export const photos = [
     src: 'https://owvix.com/images/assets/clients/sinestesia.png',
     width: 1,
     height: 1,
+    title: 'Sinestesia',
   },
-
   {
     src: 'https://owvix.com/images/assets/clients/pef-2018.png',
     width: 1,
     height: 1,
+    title: 'Padjadjaran Education Festival 2018',
   },
-
   {
     src: 'https://owvix.com/images/assets/clients/pef-2019.png',
     width: 1,
     height: 1,
+    title: 'Padjadjaran Education Festival 2018',
   },
-
   {
     src: 'https://owvix.com/images/assets/clients/savaravat.png',
     width: 1,
@@ -208,8 +207,8 @@ export const photos = [
     src: 'https://owvix.com/images/assets/clients/psm-unpad.png',
     width: 1,
     height: 1,
+    title: 'PSM Unoad',
   },
-
   {
     src: 'https://owvix.com/images/assets/clients/prabu-unpad.png',
     width: 1,
@@ -222,14 +221,12 @@ export const photos = [
     height: 1,
     title: 'PT. Bringin Gigantara',
   },
-
   {
     src: 'https://owvix.com/images/assets/clients/sma-merdeka.png',
     width: 1,
     height: 1,
     title: 'SMA Merdeka Soreang',
   },
-
   {
     src: 'https://owvix.com/images/assets/clients/universitas-islam-bandung.png',
     width: 1,

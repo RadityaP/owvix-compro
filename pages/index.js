@@ -26,50 +26,62 @@ const GalleryComponent = dynamic(() => import('../components/specific/gallery'),
 const YoutubeComponent = dynamic(() => import('../components/specific/youtube'), {});
 
 const arrayService = [
-  'Video Production',
-  'Film',
-  'Web Series',
-  'Video Promotion',
-  'Company Profile',
-  'Animation',
-  'Moment Documentaries',
-  'Event',
-  'Wedding',
-  'Prewedding',
-  'Graduation',
-  'Advertising',
-  'Product',
-  'Year Book',
-  'Album',
+  ['Video Production', 'Film', 'Web Series', 'Video Promotion'],
+  ['Company Profile', 'Animation', 'Moment Documentaries'],
+  ['Event', 'Wedding', 'Prewedding', 'Graduation'],
+  ['Advertising', 'Product', 'Year Book', 'Album'],
 ];
 const Index = () => {
   const router = useRouter();
 
   return (
     <Container title="Creative Agency | Owvix Creative" background="black">
-      <div className={`${styles['background']} w-full pt-[100px] pb-[150px]`}>
+      <div className={`w-full py-10`}>
         <Section text="white">
-          <div className="mb-7 md:mb-8">
-            <h1 className="text-[50px] md:text-[88px] font-bold m-0">INFINITY</h1>
-            <h1 className="text-[50px] md:text-[88px] font-bold mb-0 mt-[-10px] md:mt-[-30px]">
-              CREATIVITY.
-            </h1>
-          </div>
-          <div className="w-full sm:w-8/12 md:w-7/12 flex flex-wrap">
-            {arrayService.map((service, index) => {
-              return (
-                <div key={index}>
-                  {index !== arrayService.length - 1 ? (
-                    <>
-                      {service}
-                      <span className="mx-2">|</span>
-                    </>
-                  ) : (
-                    service
-                  )}
+          <div className="text-center">
+            <div className="mb-7 md:mb-8">
+              <div className="h-[150px] md:h-[275px] lg:h-[350px] aspect-[2/1] m-auto mb-[50px] md:mb-[100px] relative">
+                <Image
+                  blurDataURL="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                  src="https://owvix.com/images/assets/infinity.png"
+                  layout="fill"
+                  loading="lazy"
+                  objectFit="cover"
+                  placeholder="blur"
+                  alt="partner1"
+                ></Image>
+                <div className="absolute leading-tight left-2/4 top-2/4 translate-y-[-50%] translate-x-[-50%] whitespace-nowrap">
+                  <div className="text-[14px] md:text-lg font-normal">OWVIX CREATIVE</div>
+                  <div className="text-[28px] md:text-[56px] lg:text-[72px] font-semibold m-0">
+                    INFINITY CREATIVITY
+                  </div>
                 </div>
-              );
-            })}
+              </div>
+            </div>
+            <div className="w-full md:w-9/12 m-auto text-center">
+              <div className="w-full justify-center flex flex-wrap text-center flex-col text-[8px] md:text-[14px] leading-none tracking-wide">
+                {arrayService.map((service, index) => {
+                  return (
+                    <div key={index} className="flex justify-center">
+                      {service.map((item, itemIndex) => {
+                        return (
+                          <div key={itemIndex}>
+                            {itemIndex !== service.length - 1 ? (
+                              <>
+                                {item.toUpperCase()}
+                                <span className="mx-[5px]">|</span>
+                              </>
+                            ) : (
+                              item.toUpperCase()
+                            )}
+                          </div>
+                        );
+                      })}
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
           </div>
           {/* <div className="w-full sm: w-8/12 md:w-6/12">
             Video Production | Film | Web Series | Video Promotion | Company Profile | Animation |
@@ -95,51 +107,51 @@ const Index = () => {
             <div className={galleryStyles['gallery-container']}>
               <GalleryComponent photos={eventPhotos} />
             </div>
-            <h3 className={galleryStyles.title}>Events</h3>
+            <div className={galleryStyles.title}>Events</div>
           </div>
           <div className={`${galleryStyles['item-container']} `}>
             <div className={galleryStyles['gallery-container']}>
               <GalleryComponent photos={graduationPhotos} />
             </div>
-            <h3 className={galleryStyles.title}>Graduation</h3>
+            <div className={galleryStyles.title}>Graduation</div>
           </div>
           <div className={`${galleryStyles['item-container']} `}>
             <div className={galleryStyles['gallery-container']}>
               <GalleryComponent photos={birthdayPhotos} />
             </div>
-            <h3 className={galleryStyles.title}>Birthday</h3>
+            <div className={galleryStyles.title}>Birthday</div>
           </div>
           <div className={`${galleryStyles['item-container']} `}>
             <div className={galleryStyles['gallery-container']}>
               <GalleryComponent photos={engagementPhotos} />
             </div>
-            <h3 className={galleryStyles.title}>Engagement</h3>
+            <div className={galleryStyles.title}>Engagement</div>
           </div>
           <div className={`${galleryStyles['item-container']} `}>
             <div className={galleryStyles['gallery-container']}>
               <GalleryComponent photos={preweddingPhotos} />
             </div>
-            <h3 className={galleryStyles.title}>Prewedding</h3>
+            <div className={galleryStyles.title}>Prewedding</div>
           </div>
           <div className={`${galleryStyles['item-container']} `}>
             <div className={galleryStyles['gallery-container']}>
               <GalleryComponent photos={siramanPhotos} />
             </div>
-            <h3 className={galleryStyles.title}>Siraman</h3>
+            <div className={galleryStyles.title}>Siraman</div>
           </div>
           <div className={`${galleryStyles['item-container']} `}>
             <div className={galleryStyles['gallery-container']}>
               <GalleryComponent photos={weddingPhotos} />
             </div>
-            <h3 className={galleryStyles.title}>Wedding</h3>
+            <div className={galleryStyles.title}>Wedding</div>
           </div>
         </div>
         <div className="flex justify-center relative mt-10">
           <YoutubeComponent videos={momentVideos} />
         </div>
-        <h3 className="w-full text-[16px] md:text-[24px] mt-3 text-center font-medium">
+        <div className="w-full text-[16px] md:text-[24px] mt-3 text-center font-medium">
           Video Documentaries
-        </h3>
+        </div>
       </Section>
       <div
         className={`${styles['background-2']} w-full pt-[100px] pb-[150px] relative after:content-[''] after:absolute after:left-0 after:top-0 after:bottom-0 after:right-0 after:z-2`}
@@ -187,43 +199,47 @@ const Index = () => {
             <div className="flex flex-col items-center md:flex-row ml-0 md:ml-12 md:border-black border-0 md:border-l-4 border-solid">
               <div className="w-[300px] h-[150px] md:w-[120px] md:h-[120px] lg:w-[200px] md:w-[120px] md:h-[120px] lg:h-[120px] relative">
                 <Image
+                  blurDataURL="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
                   src={'https://owvix.com/images/assets/partner/itdri.png'}
                   layout="fill"
                   loading="lazy"
                   objectFit="contain"
-                  // placeholder="blur"
+                  placeholder="blur"
                   alt="partner1"
                 ></Image>
               </div>
               <div className="w-[150px] h-[150px] md:w-[120px] md:h-[120px] lg:w-[100px] md:w-[120px] md:h-[120px] lg:h-[120px] relative">
                 <Image
+                  blurDataURL="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
                   src={'https://owvix.com/images/assets/partner/inspektorat-jawa-barat.png'}
                   layout="fill"
                   loading="lazy"
                   objectFit="contain"
-                  // placeholder="blur"
+                  placeholder="blur"
                   alt="partner1"
                 ></Image>
               </div>
               <div className="w-[200px] h-[200px] md:w-[120px] md:h-[120px] lg:w-[200px] md:w-[120px] md:h-[120px] lg:h-[120px] relative">
                 <Image
+                  blurDataURL="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
                   src={
                     'https://owvix.com/images/assets/partner/direktorat-jenderal-kekayaan-negara-kemenkeu.png'
                   }
                   layout="fill"
                   loading="lazy"
                   objectFit="contain"
-                  // placeholder="blur"
+                  placeholder="blur"
                   alt="partner1"
                 ></Image>
               </div>
               <div className="w-[200px] h-[100px] md:w-[120px] md:h-[120px] lg:w-[200px] md:w-[120px] md:h-[120px] lg:h-[120px] relative">
                 <Image
+                  blurDataURL="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
                   src={'https://owvix.com/images/assets/partner/schlumberger.png'}
                   layout="fill"
                   loading="lazy"
                   objectFit="contain"
-                  // placeholder="blur"
+                  placeholder="blur"
                   alt="partner1"
                 ></Image>
               </div>
@@ -262,11 +278,12 @@ const Index = () => {
                 <a target="_blank" className="flex items-center">
                   <div className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] relative">
                     <Image
+                      blurDataURL="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
                       src={'https://owvix.com/images/assets/social/instagram.png'}
                       layout="fill"
                       loading="lazy"
                       objectFit="contain"
-                      // placeholder="blur"
+                      placeholder="blur"
                       alt="partner1"
                     ></Image>
                   </div>
@@ -279,11 +296,12 @@ const Index = () => {
                 <a target="_blank" className="flex items-center">
                   <div className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] relative">
                     <Image
+                      blurDataURL="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
                       src={'https://owvix.com/images/assets/social/wa.png'}
                       layout="fill"
                       loading="lazy"
                       objectFit="contain"
-                      // placeholder="blur"
+                      placeholder="blur"
                       alt="partner1"
                     ></Image>
                   </div>
@@ -294,11 +312,12 @@ const Index = () => {
             <div className="flex items-center">
               <div className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] relative">
                 <Image
+                  blurDataURL="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
                   src={'https://owvix.com/images/assets/social/email.png'}
                   layout="fill"
                   loading="lazy"
                   objectFit="contain"
-                  // placeholder="blur"
+                  placeholder="blur"
                   alt="partner1"
                 ></Image>
               </div>
@@ -309,11 +328,12 @@ const Index = () => {
                 <a target="_blank" className="flex items-center">
                   <div className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] relative">
                     <Image
+                      blurDataURL="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
                       src={'https://owvix.com/images/assets/social/youtube.png'}
                       layout="fill"
                       loading="lazy"
                       objectFit="contain"
-                      // placeholder="blur"
+                      placeholder="blur"
                       alt="partner1"
                     ></Image>
                   </div>
@@ -328,11 +348,12 @@ const Index = () => {
                 <a target="_blank" className="flex items-center">
                   <div className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] relative">
                     <Image
+                      blurDataURL="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
                       src={'https://owvix.com/images/assets/social/tiktok.png'}
                       layout="fill"
                       loading="lazy"
                       objectFit="contain"
-                      // placeholder="blur"
+                      placeholder="blur"
                       alt="partner1"
                     ></Image>
                   </div>

@@ -2,7 +2,7 @@ import { Html, Head, Main, NextScript } from 'next/document';
 
 export default function Document() {
   return (
-    <Html>
+    <Html lang="en">
       <Head>
         <link
           href="https://fonts.googleapis.com/css2?family=Inter&display=optional"
@@ -14,12 +14,10 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap"
           rel="stylesheet"
         ></link>
-        <link rel="icon" href="/images/assets/logo-white-no-text.png" />
+        <link rel="icon" href="/favicon.ico" sizes="48x48" />
         <meta
           name="description"
-          content="Owvix Photography was formed with limited resources, but was
-              able to produce a great output that could compete in the creative agency industry in
-              West Java"
+          content="Owvix is creative agency based in Bandung that's ready to produce your incredible project such as documentation of event, graduation, wedding or making advertising products, indie short movie, webseries or documentary, etc. We will provided great services for you."
         />
       </Head>
       <body>

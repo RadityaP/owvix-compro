@@ -1,11 +1,11 @@
-import { useState, useCallback } from "react";
-import Container from "../components/global/container";
-import Section from "../components/global/section/section";
-import Title from "../components/global/title/title";
-import { photos } from "../file/client";
-import Carousel, { Modal, ModalGateway } from "react-images";
-import Gallery from "react-photo-gallery";
-import CustomRenderer from "../components/specific/gallery/customImageRenderer";
+import { useState, useCallback } from 'react';
+import Container from '../components/global/container';
+import Section from '../components/global/section/section';
+import Title from '../components/global/title/title';
+import { photos } from '../file/client';
+import Carousel, { Modal, ModalGateway } from 'react-images';
+import Gallery from 'react-photo-gallery';
+import CustomRenderer from '../components/specific/gallery/customImageRenderer';
 
 const Index = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -25,18 +25,18 @@ const Index = () => {
     ({ index, left, top, key, photo, direction }) => (
       <CustomRenderer
         key={key}
-        margin={"2px"}
+        margin={'2px'}
         index={index}
-        direction={"column"}
+        direction={'column'}
         photo={photo}
         left={left}
-        quality={50}
+        quality={30}
         onClick={(i) => openLightbox(i)}
         top={top}
       />
     ),
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    []
+    [],
   );
 
   return (
@@ -52,7 +52,7 @@ const Index = () => {
           <div className="md:px-40">
             <Gallery
               photos={photos}
-              direction={"column"}
+              direction={'column'}
               columns={3}
               onClick={openLightbox}
               renderImage={imageRenderer}
@@ -67,7 +67,7 @@ const Index = () => {
                       alt: x.title,
                       srcset: x.srcSet,
                       caption: (
-                        <div style={{ fontSize: "40px", textAlign: "center" }}>{x.title}</div>
+                        <div style={{ fontSize: '40px', textAlign: 'center' }}>{x.title}</div>
                       ),
                     }))}
                   />

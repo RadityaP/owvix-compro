@@ -39,11 +39,11 @@ const Index = () => {
             </div>
           </div>
           <div className="basis-6/12 flex items-center px-2 lg:px-16">
-            <h6 className="text-sm lg:text-lg font-normal h-fit lg:pl-16 lg:py-5 text-center lg:text-justify lg:border-l-white lg:border-0 lg:border-l-2 lg:border-solid">
+            <p className="text-sm lg:text-lg font-normal h-fit lg:pl-16 lg:py-5 text-center lg:text-justify lg:border-l-white lg:border-0 lg:border-l-2 lg:border-solid">
               Owvix was founded by Muhammad Rinaldy Syarifullah, the goal is to create a flexible
               and reliable creative team to cover a lot of documentation needs for graduations,
               wedding, and product advertisement in the scope of Bandung and especially in West Java
-            </h6>
+            </p>
           </div>
         </div>
       </Section>
@@ -55,23 +55,23 @@ const Index = () => {
       <Section text="white">
         <div className="flex flex-col lg:flex-row items-stretch px-2 lg:px-0">
           <div className="basis-6/12 flex items-center">
-            <h6 className="text-sm lg:text-lg font-normal h-fit mb-10 lg:mb-0 lg:px-16 text-center lg:text-justify m-0">
+            <p className="text-sm lg:text-lg font-normal h-fit mb-10 lg:mb-0 lg:px-16 text-center lg:text-justify m-0">
               &quot;On March 23 2018, Owvix Photography was formed with limited resources, but was
               able to produce a great output that could compete in the creative agency industry in
               West Java&quot; - M. Rinaldy S.
               <br />
               <br />
               Owvix has grown guite rapidly from a small creative team with mediocre resources.
-            </h6>
+            </p>
           </div>
           <div className="basis-6/12 flex items-center">
-            <h6 className="text-sm lg:text-lg font-normal h-fit lg:px-16 text-center lg:text-justify m-0">
+            <p className="text-sm lg:text-lg font-normal h-fit lg:px-16 text-center lg:text-justify m-0">
               Within a few years, Owvix not only provided a great services for documentation of
               graduations, weddings or products, but also began to dive deeper by making indie short
               films, also able to create web-series, making motion graphic animations for various
               events, collaborate with well-known companies in Indonesia to create compan profiles,
               and much more.
-            </h6>
+            </p>
           </div>
         </div>
       </Section>
